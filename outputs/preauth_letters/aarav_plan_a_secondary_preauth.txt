@@ -1,0 +1,13 @@
+To: Medical Management Department, Insurer1 / Plan A
+Subject: Pre-Authorization Request for Aarav Sen - ACL Reconstruction
+
+Dear Utilization Review Team,
+
+This letter requests pre-authorization for Aarav Sen's medically necessary knee surgery. MRI findings confirm Complete ACL tear, Medial meniscus tear. The requested procedures are 29888 (Arthroscopically aided ACL reconstruction), 29881 (Arthroscopy, knee, surgical; with meniscectomy), with an estimated allowed charge of INR 505,000.
+
+DuCO-Agent has identified Insurer1 / Plan A as the secondary payer under the Sen family's Coordination of Benefits arrangement. The surgery is planned to address functional instability and meniscal pathology documented in the radiology report.
+
+Please review the attached clinical report, surgeon estimate, and COB details. Kindly confirm authorization status, approved service dates, and any additional documentation requirements before surgery to avoid claim rejection.
+
+Sincerely,
+DuCO-Agent Clinical Coordination System
