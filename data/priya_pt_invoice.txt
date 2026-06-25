@@ -1,0 +1,6 @@
+Sen Rehabilitation Clinic
+Patient: Priya Sen
+Service: Physical Therapy Evaluation and Therapeutic Exercise
+Dates of service: 03-Jun-2026, 06-Jun-2026, 10-Jun-2026, 13-Jun-2026
+Billing note: chronic back pain program, submit to primary then COB secondary.
+Total charges: INR 38,000
