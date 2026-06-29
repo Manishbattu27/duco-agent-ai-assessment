@@ -84,6 +84,10 @@ and clinical_rationale for this insurance claim:
         for claim in clinical_data["claims"]:
             if not claim.get("cpt_codes"):
                 issues.append(f"{claim['claim_id']} has no CPT codes.")
+            if not claim.get("diagnosis"):
+                issues.append(f"{claim['claim_id']} has no diagnosis.")
+            if not claim.get("icd10_codes"):
+                issues.append(f"{claim['claim_id']} has no ICD-10 codes.")
             if claim["claim_type"] == "surgery" and not claim.get("preauth_required"):
                 issues.append("Aarav surgery should require preauthorization.")
         return ValidationResult(ok=not issues, issues=issues)

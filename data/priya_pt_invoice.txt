@@ -1,6 +1,13 @@
-Sen Rehabilitation Clinic
+NOVA PHYSIO AND REHAB CENTER
+
 Patient: Priya Sen
+
+Document: Physical Therapy Invoice
+
 Service: Physical Therapy Evaluation and Therapeutic Exercise
-Dates of service: 03-Jun-2026, 06-Jun-2026, 10-Jun-2026, 13-Jun-2026
-Billing note: chronic back pain program, submit to primary then COB secondary.
-Total charges: INR 38,000
+Dates of service: 02-Aug-2026, 05-Aug-2026, 09-Aug-2026
+Billing note: back pain rehab plan, bill primary then secondary.
+
+Total charges: INR 52,500
+
+billing admin note
