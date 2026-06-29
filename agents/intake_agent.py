@@ -66,7 +66,7 @@ class IntakeAgent:
     def _parse_aarav_surgery(self, estimate_text: str, mri_text: str) -> dict[str, Any]:
         procedures = []
         for code, desc, amount in re.findall(
-            r"CPT\s*(\d{5})\s*[-:]\s*(.*?)\s*[-:]\s*(?:INR|Rs\.?)?\s*([0-9,]+)",
+            r"CPT\s*(\d{5})\s*(?:\(|[-:])\s*(.*?)(?:\)|[-:])\s*[-:]?\s*(?:INR|Rs\.?|₹)?\s*([0-9,]+)",
             estimate_text,
             flags=re.IGNORECASE,
         ):
@@ -123,7 +123,7 @@ class IntakeAgent:
         for label in labels:
             pattern = (
                 rf"{re.escape(label)}\s*[:\-]?\s*"
-                rf"(?:INR|Rs\.?)?\s*([0-9]{{1,3}}(?:,[0-9]{{2,3}})+|[0-9]{{4,}})"
+                rf"(?:INR|Rs\.?|₹)?\s*([0-9]{{1,3}}(?:,[0-9]{{2,3}})+|[0-9]{{4,}})"
             )
             match = re.search(pattern, text, flags=re.IGNORECASE)
             if match:
@@ -131,7 +131,7 @@ class IntakeAgent:
         return default
 
     def _largest_money(self, text: str, default: int) -> int:
-        matches = re.findall(r"(?:INR|Rs\.?)?\s*([0-9]{1,3}(?:,[0-9]{2,3})+|[0-9]{4,})", text)
+        matches = re.findall(r"(?:INR|Rs\.?|₹)?\s*([0-9]{1,3}(?:,[0-9]{2,3})+|[0-9]{4,})", text)
         if not matches:
             return default
         return max(int(value.replace(",", "")) for value in matches)
@@ -143,6 +143,13 @@ class IntakeAgent:
         for claim in intake["claims"]:
             if claim["charge_inr"] <= 0:
                 issues.append(f"{claim['claim_id']} has no positive charge.")
+            if claim["charge_inr"] > 10_000_000:
+                issues.append(f"{claim['claim_id']} charge is outside the supported mock range.")
+            if not claim.get("description"):
+                issues.append(f"{claim['claim_id']} is missing a service description.")
+        aarav_claim = next((claim for claim in intake["claims"] if claim["claim_id"] == "AARAV-ACL-001"), None)
+        if aarav_claim and not aarav_claim.get("procedures"):
+            issues.append("Aarav surgery claim is missing CPT procedure lines.")
         if "ACL" not in intake["raw_documents"]["aarav_mri_report"].upper():
             issues.append("MRI text did not include ACL evidence.")
         return ValidationResult(ok=not issues, issues=issues)

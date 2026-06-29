@@ -1,0 +1,14 @@
+Manual upload sample expected values
+
+Priya PT invoice total: INR 52,500
+Aarav surgery estimated total: INR 535,000
+Expected household total charges: INR 587,500
+
+Expected approximate COB with current rules:
+Priya primary Plan A pays INR 38,250
+Priya secondary Plan B pays INR 14,250
+Priya patient pays INR 0
+
+Aarav primary Plan B pays INR 404,000
+Aarav secondary Plan A pays INR 131,000
+Aarav patient pays INR 0

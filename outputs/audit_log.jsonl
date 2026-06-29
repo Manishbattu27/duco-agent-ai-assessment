@@ -1,0 +1,170 @@
+{"timestamp": "2026-06-25T17:58:04.445324+00:00", "run_id": "d3bb8b01-d38e-44d7-95eb-5803cece6180", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-25T17:58:04.446329+00:00", "run_id": "d3bb8b01-d38e-44d7-95eb-5803cece6180", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-25T17:58:04.449326+00:00", "run_id": "d3bb8b01-d38e-44d7-95eb-5803cece6180", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 2.39, "issues": []}
+{"timestamp": "2026-06-25T17:58:04.449326+00:00", "run_id": "d3bb8b01-d38e-44d7-95eb-5803cece6180", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-25T17:58:04.450326+00:00", "run_id": "d3bb8b01-d38e-44d7-95eb-5803cece6180", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.11, "issues": []}
+{"timestamp": "2026-06-25T17:58:04.451327+00:00", "run_id": "d3bb8b01-d38e-44d7-95eb-5803cece6180", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-25T17:58:04.451327+00:00", "run_id": "d3bb8b01-d38e-44d7-95eb-5803cece6180", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-06-25T17:58:04.451327+00:00", "run_id": "d3bb8b01-d38e-44d7-95eb-5803cece6180", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-25T17:58:04.474564+00:00", "run_id": "d3bb8b01-d38e-44d7-95eb-5803cece6180", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 22.41, "issues": []}
+{"timestamp": "2026-06-25T17:58:04.475563+00:00", "run_id": "d3bb8b01-d38e-44d7-95eb-5803cece6180", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-25T17:58:54.922695+00:00", "run_id": "d1d7c4a9-0dfc-4ded-b29e-5f978d8943cd", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-25T17:58:54.922695+00:00", "run_id": "d1d7c4a9-0dfc-4ded-b29e-5f978d8943cd", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-25T17:58:54.926694+00:00", "run_id": "d1d7c4a9-0dfc-4ded-b29e-5f978d8943cd", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 2.9, "issues": []}
+{"timestamp": "2026-06-25T17:58:54.927697+00:00", "run_id": "d1d7c4a9-0dfc-4ded-b29e-5f978d8943cd", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-25T17:58:54.928693+00:00", "run_id": "d1d7c4a9-0dfc-4ded-b29e-5f978d8943cd", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.19, "issues": []}
+{"timestamp": "2026-06-25T17:58:54.928693+00:00", "run_id": "d1d7c4a9-0dfc-4ded-b29e-5f978d8943cd", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-25T17:58:54.929693+00:00", "run_id": "d1d7c4a9-0dfc-4ded-b29e-5f978d8943cd", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.09, "issues": []}
+{"timestamp": "2026-06-25T17:58:54.929693+00:00", "run_id": "d1d7c4a9-0dfc-4ded-b29e-5f978d8943cd", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-25T17:58:54.961697+00:00", "run_id": "d1d7c4a9-0dfc-4ded-b29e-5f978d8943cd", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 31.6, "issues": []}
+{"timestamp": "2026-06-25T17:58:54.963692+00:00", "run_id": "d1d7c4a9-0dfc-4ded-b29e-5f978d8943cd", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-25T17:59:04.621219+00:00", "run_id": "4bb26963-64a1-46e5-bc59-21dd6b1d8740", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-25T17:59:04.622218+00:00", "run_id": "4bb26963-64a1-46e5-bc59-21dd6b1d8740", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-25T17:59:04.623220+00:00", "run_id": "4bb26963-64a1-46e5-bc59-21dd6b1d8740", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.44, "issues": []}
+{"timestamp": "2026-06-25T17:59:04.624219+00:00", "run_id": "4bb26963-64a1-46e5-bc59-21dd6b1d8740", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-25T17:59:04.624219+00:00", "run_id": "4bb26963-64a1-46e5-bc59-21dd6b1d8740", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.07, "issues": []}
+{"timestamp": "2026-06-25T17:59:04.625218+00:00", "run_id": "4bb26963-64a1-46e5-bc59-21dd6b1d8740", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-25T17:59:04.625218+00:00", "run_id": "4bb26963-64a1-46e5-bc59-21dd6b1d8740", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.05, "issues": []}
+{"timestamp": "2026-06-25T17:59:04.626220+00:00", "run_id": "4bb26963-64a1-46e5-bc59-21dd6b1d8740", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-25T17:59:04.647216+00:00", "run_id": "4bb26963-64a1-46e5-bc59-21dd6b1d8740", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 20.69, "issues": []}
+{"timestamp": "2026-06-25T17:59:04.647216+00:00", "run_id": "4bb26963-64a1-46e5-bc59-21dd6b1d8740", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-25T17:59:32.448411+00:00", "run_id": "b2c85352-3b03-48e0-b9b3-68f9b3de2b9c", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-25T17:59:32.448411+00:00", "run_id": "b2c85352-3b03-48e0-b9b3-68f9b3de2b9c", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-25T17:59:32.450406+00:00", "run_id": "b2c85352-3b03-48e0-b9b3-68f9b3de2b9c", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.6, "issues": []}
+{"timestamp": "2026-06-25T17:59:32.451403+00:00", "run_id": "b2c85352-3b03-48e0-b9b3-68f9b3de2b9c", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-25T17:59:32.451403+00:00", "run_id": "b2c85352-3b03-48e0-b9b3-68f9b3de2b9c", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-06-25T17:59:32.452410+00:00", "run_id": "b2c85352-3b03-48e0-b9b3-68f9b3de2b9c", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-25T17:59:32.452410+00:00", "run_id": "b2c85352-3b03-48e0-b9b3-68f9b3de2b9c", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.05, "issues": []}
+{"timestamp": "2026-06-25T17:59:32.452410+00:00", "run_id": "b2c85352-3b03-48e0-b9b3-68f9b3de2b9c", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-25T17:59:32.472921+00:00", "run_id": "b2c85352-3b03-48e0-b9b3-68f9b3de2b9c", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 19.59, "issues": []}
+{"timestamp": "2026-06-25T17:59:32.472921+00:00", "run_id": "b2c85352-3b03-48e0-b9b3-68f9b3de2b9c", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-25T18:07:17.506657+00:00", "run_id": "f7e26840-23e1-4dca-aeaa-2056968be8a6", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-25T18:07:17.506657+00:00", "run_id": "f7e26840-23e1-4dca-aeaa-2056968be8a6", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-25T18:07:17.508657+00:00", "run_id": "f7e26840-23e1-4dca-aeaa-2056968be8a6", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.67, "issues": []}
+{"timestamp": "2026-06-25T18:07:17.509658+00:00", "run_id": "f7e26840-23e1-4dca-aeaa-2056968be8a6", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-25T18:07:17.509658+00:00", "run_id": "f7e26840-23e1-4dca-aeaa-2056968be8a6", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.07, "issues": []}
+{"timestamp": "2026-06-25T18:07:17.510657+00:00", "run_id": "f7e26840-23e1-4dca-aeaa-2056968be8a6", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-25T18:07:17.510657+00:00", "run_id": "f7e26840-23e1-4dca-aeaa-2056968be8a6", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.05, "issues": []}
+{"timestamp": "2026-06-25T18:07:17.510657+00:00", "run_id": "f7e26840-23e1-4dca-aeaa-2056968be8a6", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-25T18:07:18.677329+00:00", "run_id": "f7e26840-23e1-4dca-aeaa-2056968be8a6", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 1165.67, "issues": []}
+{"timestamp": "2026-06-25T18:07:18.677329+00:00", "run_id": "f7e26840-23e1-4dca-aeaa-2056968be8a6", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-25T18:17:33.227883+00:00", "run_id": "4c91cc1e-5194-4048-b6df-107697ca7ac7", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-25T18:17:33.229885+00:00", "run_id": "4c91cc1e-5194-4048-b6df-107697ca7ac7", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-25T18:17:33.240892+00:00", "run_id": "4c91cc1e-5194-4048-b6df-107697ca7ac7", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 8.75, "issues": []}
+{"timestamp": "2026-06-25T18:17:33.242885+00:00", "run_id": "4c91cc1e-5194-4048-b6df-107697ca7ac7", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-25T18:17:33.244883+00:00", "run_id": "4c91cc1e-5194-4048-b6df-107697ca7ac7", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.29, "issues": []}
+{"timestamp": "2026-06-25T18:17:33.245895+00:00", "run_id": "4c91cc1e-5194-4048-b6df-107697ca7ac7", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-25T18:17:33.247887+00:00", "run_id": "4c91cc1e-5194-4048-b6df-107697ca7ac7", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.22, "issues": []}
+{"timestamp": "2026-06-25T18:17:33.249887+00:00", "run_id": "4c91cc1e-5194-4048-b6df-107697ca7ac7", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-25T18:17:37.600483+00:00", "run_id": "4c91cc1e-5194-4048-b6df-107697ca7ac7", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 4349.03, "issues": []}
+{"timestamp": "2026-06-25T18:17:37.602503+00:00", "run_id": "4c91cc1e-5194-4048-b6df-107697ca7ac7", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-25T19:05:12.394922+00:00", "run_id": "c91abbf4-9138-4038-8e3f-af753f5c9e58", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-25T19:05:12.396159+00:00", "run_id": "c91abbf4-9138-4038-8e3f-af753f5c9e58", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-25T19:05:12.399169+00:00", "run_id": "c91abbf4-9138-4038-8e3f-af753f5c9e58", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 2.15, "issues": []}
+{"timestamp": "2026-06-25T19:05:12.400164+00:00", "run_id": "c91abbf4-9138-4038-8e3f-af753f5c9e58", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-25T19:05:12.400164+00:00", "run_id": "c91abbf4-9138-4038-8e3f-af753f5c9e58", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.07, "issues": []}
+{"timestamp": "2026-06-25T19:05:12.401158+00:00", "run_id": "c91abbf4-9138-4038-8e3f-af753f5c9e58", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-25T19:05:12.401158+00:00", "run_id": "c91abbf4-9138-4038-8e3f-af753f5c9e58", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.08, "issues": []}
+{"timestamp": "2026-06-25T19:05:12.402157+00:00", "run_id": "c91abbf4-9138-4038-8e3f-af753f5c9e58", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-25T19:05:12.426161+00:00", "run_id": "c91abbf4-9138-4038-8e3f-af753f5c9e58", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 23.88, "issues": []}
+{"timestamp": "2026-06-25T19:05:12.427166+00:00", "run_id": "c91abbf4-9138-4038-8e3f-af753f5c9e58", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-25T19:15:34.704596+00:00", "run_id": "d5c03c75-ba91-4c8e-a765-591e450d41b2", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-25T19:15:34.704596+00:00", "run_id": "d5c03c75-ba91-4c8e-a765-591e450d41b2", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-25T19:15:34.707596+00:00", "run_id": "d5c03c75-ba91-4c8e-a765-591e450d41b2", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 2.64, "issues": []}
+{"timestamp": "2026-06-25T19:15:34.708595+00:00", "run_id": "d5c03c75-ba91-4c8e-a765-591e450d41b2", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-25T19:15:34.708595+00:00", "run_id": "d5c03c75-ba91-4c8e-a765-591e450d41b2", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.08, "issues": []}
+{"timestamp": "2026-06-25T19:15:34.709612+00:00", "run_id": "d5c03c75-ba91-4c8e-a765-591e450d41b2", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-25T19:15:34.709612+00:00", "run_id": "d5c03c75-ba91-4c8e-a765-591e450d41b2", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.07, "issues": []}
+{"timestamp": "2026-06-25T19:15:34.709612+00:00", "run_id": "d5c03c75-ba91-4c8e-a765-591e450d41b2", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-25T19:15:35.911378+00:00", "run_id": "d5c03c75-ba91-4c8e-a765-591e450d41b2", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 1200.58, "issues": []}
+{"timestamp": "2026-06-25T19:15:35.911378+00:00", "run_id": "d5c03c75-ba91-4c8e-a765-591e450d41b2", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-25T19:20:10.932688+00:00", "run_id": "b755826d-1b64-4405-be1e-88d44de7e4bf", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-25T19:20:10.932688+00:00", "run_id": "b755826d-1b64-4405-be1e-88d44de7e4bf", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-25T19:20:10.935682+00:00", "run_id": "b755826d-1b64-4405-be1e-88d44de7e4bf", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.95, "issues": []}
+{"timestamp": "2026-06-25T19:20:10.935682+00:00", "run_id": "b755826d-1b64-4405-be1e-88d44de7e4bf", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-25T19:20:10.936683+00:00", "run_id": "b755826d-1b64-4405-be1e-88d44de7e4bf", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-06-25T19:20:10.936683+00:00", "run_id": "b755826d-1b64-4405-be1e-88d44de7e4bf", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-25T19:20:10.937683+00:00", "run_id": "b755826d-1b64-4405-be1e-88d44de7e4bf", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.08, "issues": []}
+{"timestamp": "2026-06-25T19:20:10.937683+00:00", "run_id": "b755826d-1b64-4405-be1e-88d44de7e4bf", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-25T19:20:10.960218+00:00", "run_id": "b755826d-1b64-4405-be1e-88d44de7e4bf", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 22.09, "issues": []}
+{"timestamp": "2026-06-25T19:20:10.961225+00:00", "run_id": "b755826d-1b64-4405-be1e-88d44de7e4bf", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-25T19:20:56.825774+00:00", "run_id": "ba932725-bc3a-4bd1-842c-35a0d9e2a36e", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-25T19:20:56.826776+00:00", "run_id": "ba932725-bc3a-4bd1-842c-35a0d9e2a36e", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-25T19:20:56.828776+00:00", "run_id": "ba932725-bc3a-4bd1-842c-35a0d9e2a36e", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.8, "issues": []}
+{"timestamp": "2026-06-25T19:20:56.829776+00:00", "run_id": "ba932725-bc3a-4bd1-842c-35a0d9e2a36e", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-25T19:20:56.829776+00:00", "run_id": "ba932725-bc3a-4bd1-842c-35a0d9e2a36e", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.07, "issues": []}
+{"timestamp": "2026-06-25T19:20:56.830775+00:00", "run_id": "ba932725-bc3a-4bd1-842c-35a0d9e2a36e", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-25T19:20:56.830775+00:00", "run_id": "ba932725-bc3a-4bd1-842c-35a0d9e2a36e", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.07, "issues": []}
+{"timestamp": "2026-06-25T19:20:56.831776+00:00", "run_id": "ba932725-bc3a-4bd1-842c-35a0d9e2a36e", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-25T19:20:57.772806+00:00", "run_id": "ba932725-bc3a-4bd1-842c-35a0d9e2a36e", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 940.48, "issues": []}
+{"timestamp": "2026-06-25T19:20:57.772806+00:00", "run_id": "ba932725-bc3a-4bd1-842c-35a0d9e2a36e", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-29T06:53:52.543637+00:00", "run_id": "afd95735-a1a7-450c-ae13-5eb3dd73f5c0", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-29T06:53:52.544143+00:00", "run_id": "afd95735-a1a7-450c-ae13-5eb3dd73f5c0", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-29T06:53:52.555569+00:00", "run_id": "afd95735-a1a7-450c-ae13-5eb3dd73f5c0", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 6.97, "issues": []}
+{"timestamp": "2026-06-29T06:53:52.556596+00:00", "run_id": "afd95735-a1a7-450c-ae13-5eb3dd73f5c0", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-29T06:53:52.558588+00:00", "run_id": "afd95735-a1a7-450c-ae13-5eb3dd73f5c0", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.21, "issues": []}
+{"timestamp": "2026-06-29T06:53:52.559794+00:00", "run_id": "afd95735-a1a7-450c-ae13-5eb3dd73f5c0", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-29T06:53:52.560809+00:00", "run_id": "afd95735-a1a7-450c-ae13-5eb3dd73f5c0", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.11, "issues": []}
+{"timestamp": "2026-06-29T06:53:52.561814+00:00", "run_id": "afd95735-a1a7-450c-ae13-5eb3dd73f5c0", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-29T06:53:56.545609+00:00", "run_id": "afd95735-a1a7-450c-ae13-5eb3dd73f5c0", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 3982.71, "issues": []}
+{"timestamp": "2026-06-29T06:53:56.546606+00:00", "run_id": "afd95735-a1a7-450c-ae13-5eb3dd73f5c0", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-29T12:25:15.551139+00:00", "run_id": "c8fe38f4-d472-42b8-ac86-a605c7f04061", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-29T12:25:15.551139+00:00", "run_id": "c8fe38f4-d472-42b8-ac86-a605c7f04061", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-29T12:25:15.554132+00:00", "run_id": "c8fe38f4-d472-42b8-ac86-a605c7f04061", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 2.33, "issues": []}
+{"timestamp": "2026-06-29T12:25:15.554132+00:00", "run_id": "c8fe38f4-d472-42b8-ac86-a605c7f04061", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-29T12:25:15.555134+00:00", "run_id": "c8fe38f4-d472-42b8-ac86-a605c7f04061", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-06-29T12:25:15.555134+00:00", "run_id": "c8fe38f4-d472-42b8-ac86-a605c7f04061", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-29T12:25:15.556133+00:00", "run_id": "c8fe38f4-d472-42b8-ac86-a605c7f04061", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-06-29T12:25:15.556133+00:00", "run_id": "c8fe38f4-d472-42b8-ac86-a605c7f04061", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-29T12:25:16.799766+00:00", "run_id": "c8fe38f4-d472-42b8-ac86-a605c7f04061", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 1242.83, "issues": []}
+{"timestamp": "2026-06-29T12:25:16.799766+00:00", "run_id": "c8fe38f4-d472-42b8-ac86-a605c7f04061", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-29T12:27:04.460147+00:00", "run_id": "dec22692-4b49-4fca-8923-625ac1138c55", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-29T12:27:04.461145+00:00", "run_id": "dec22692-4b49-4fca-8923-625ac1138c55", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-29T12:27:04.463145+00:00", "run_id": "dec22692-4b49-4fca-8923-625ac1138c55", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.79, "issues": []}
+{"timestamp": "2026-06-29T12:27:04.464144+00:00", "run_id": "dec22692-4b49-4fca-8923-625ac1138c55", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-29T12:27:04.464144+00:00", "run_id": "dec22692-4b49-4fca-8923-625ac1138c55", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.09, "issues": []}
+{"timestamp": "2026-06-29T12:27:04.465144+00:00", "run_id": "dec22692-4b49-4fca-8923-625ac1138c55", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-29T12:27:04.466144+00:00", "run_id": "dec22692-4b49-4fca-8923-625ac1138c55", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.11, "issues": []}
+{"timestamp": "2026-06-29T12:27:04.466144+00:00", "run_id": "dec22692-4b49-4fca-8923-625ac1138c55", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-29T12:27:05.531455+00:00", "run_id": "dec22692-4b49-4fca-8923-625ac1138c55", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 1065.1, "issues": []}
+{"timestamp": "2026-06-29T12:27:05.532454+00:00", "run_id": "dec22692-4b49-4fca-8923-625ac1138c55", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-29T13:02:42.578514+00:00", "run_id": "7a9c1348-75b4-490b-a57a-7ba353ba922a", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-29T13:02:42.578514+00:00", "run_id": "7a9c1348-75b4-490b-a57a-7ba353ba922a", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-29T13:02:42.580992+00:00", "run_id": "7a9c1348-75b4-490b-a57a-7ba353ba922a", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.51, "issues": []}
+{"timestamp": "2026-06-29T13:02:42.580992+00:00", "run_id": "7a9c1348-75b4-490b-a57a-7ba353ba922a", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-29T13:02:42.581997+00:00", "run_id": "7a9c1348-75b4-490b-a57a-7ba353ba922a", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.07, "issues": []}
+{"timestamp": "2026-06-29T13:02:42.581997+00:00", "run_id": "7a9c1348-75b4-490b-a57a-7ba353ba922a", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-29T13:02:42.581997+00:00", "run_id": "7a9c1348-75b4-490b-a57a-7ba353ba922a", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.05, "issues": []}
+{"timestamp": "2026-06-29T13:02:42.582995+00:00", "run_id": "7a9c1348-75b4-490b-a57a-7ba353ba922a", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-29T13:02:43.534007+00:00", "run_id": "7a9c1348-75b4-490b-a57a-7ba353ba922a", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 950.62, "issues": []}
+{"timestamp": "2026-06-29T13:02:43.534007+00:00", "run_id": "7a9c1348-75b4-490b-a57a-7ba353ba922a", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-29T13:22:05.578632+00:00", "run_id": "6f1c8d62-07ef-4b8f-bb5e-827db5213a82", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-29T13:22:05.578632+00:00", "run_id": "6f1c8d62-07ef-4b8f-bb5e-827db5213a82", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-29T13:22:05.581632+00:00", "run_id": "6f1c8d62-07ef-4b8f-bb5e-827db5213a82", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 2.07, "issues": []}
+{"timestamp": "2026-06-29T13:22:05.582625+00:00", "run_id": "6f1c8d62-07ef-4b8f-bb5e-827db5213a82", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-29T13:22:05.582625+00:00", "run_id": "6f1c8d62-07ef-4b8f-bb5e-827db5213a82", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.09, "issues": []}
+{"timestamp": "2026-06-29T13:22:05.583628+00:00", "run_id": "6f1c8d62-07ef-4b8f-bb5e-827db5213a82", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-29T13:22:05.583628+00:00", "run_id": "6f1c8d62-07ef-4b8f-bb5e-827db5213a82", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.08, "issues": []}
+{"timestamp": "2026-06-29T13:22:05.584628+00:00", "run_id": "6f1c8d62-07ef-4b8f-bb5e-827db5213a82", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-29T13:22:06.570627+00:00", "run_id": "6f1c8d62-07ef-4b8f-bb5e-827db5213a82", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 985.6, "issues": []}
+{"timestamp": "2026-06-29T13:22:06.570627+00:00", "run_id": "6f1c8d62-07ef-4b8f-bb5e-827db5213a82", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-29T13:33:19.299822+00:00", "run_id": "1f988f92-f37f-42e4-afe6-4894c6b8502d", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-29T13:33:19.299822+00:00", "run_id": "1f988f92-f37f-42e4-afe6-4894c6b8502d", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-29T13:33:19.301836+00:00", "run_id": "1f988f92-f37f-42e4-afe6-4894c6b8502d", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.74, "issues": []}
+{"timestamp": "2026-06-29T13:33:19.302832+00:00", "run_id": "1f988f92-f37f-42e4-afe6-4894c6b8502d", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-29T13:33:19.302832+00:00", "run_id": "1f988f92-f37f-42e4-afe6-4894c6b8502d", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-06-29T13:33:19.302832+00:00", "run_id": "1f988f92-f37f-42e4-afe6-4894c6b8502d", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-29T13:33:19.303822+00:00", "run_id": "1f988f92-f37f-42e4-afe6-4894c6b8502d", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.07, "issues": []}
+{"timestamp": "2026-06-29T13:33:19.303822+00:00", "run_id": "1f988f92-f37f-42e4-afe6-4894c6b8502d", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-29T13:33:20.256543+00:00", "run_id": "1f988f92-f37f-42e4-afe6-4894c6b8502d", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 951.72, "issues": []}
+{"timestamp": "2026-06-29T13:33:20.256543+00:00", "run_id": "1f988f92-f37f-42e4-afe6-4894c6b8502d", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-06-29T13:41:46.023924+00:00", "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-06-29T13:41:46.024924+00:00", "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-06-29T13:41:46.027926+00:00", "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 2.25, "issues": []}
+{"timestamp": "2026-06-29T13:41:46.027926+00:00", "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-06-29T13:41:46.028927+00:00", "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-06-29T13:41:46.028927+00:00", "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-06-29T13:41:46.028927+00:00", "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-06-29T13:41:46.029925+00:00", "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-06-29T13:41:46.992095+00:00", "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 962.32, "issues": []}
+{"timestamp": "2026-06-29T13:41:46.993102+00:00", "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763", "event_type": "run_completed", "status": "complete"}

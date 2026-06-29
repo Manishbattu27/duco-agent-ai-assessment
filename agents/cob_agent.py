@@ -44,6 +44,9 @@ class COBAgent:
                 issues.append(
                     f"{claim['claim_id']} payment mismatch: charge={claim['charge_inr']} paid={paid_total}"
                 )
+            for field in ("primary_paid_inr", "secondary_paid_inr", "patient_paid_inr"):
+                if claim[field] < 0:
+                    issues.append(f"{claim['claim_id']} has negative {field}.")
             if claim["primary_plan"] == claim["secondary_plan"]:
                 issues.append(f"{claim['claim_id']} has same primary and secondary plan.")
         return ValidationResult(ok=not issues, issues=issues)
