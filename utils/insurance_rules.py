@@ -34,6 +34,7 @@ class COBRulesEngine:
             coinsurance_rate=0.10,
             secondary_residual_coverage_rate=1.00,
             copay_by_claim_type={"physical_therapy": 0, "surgery": 0},
+            secondary_coordination_method="lesser_of",
         ),
         "plan_b": Plan(
             id="plan_b",
@@ -43,6 +44,7 @@ class COBRulesEngine:
             coinsurance_rate=0.20,
             secondary_residual_coverage_rate=1.00,
             copay_by_claim_type={"physical_therapy": 0, "surgery": 0},
+            secondary_coordination_method="lesser_of",
         ),
     }
 

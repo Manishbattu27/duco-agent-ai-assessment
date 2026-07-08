@@ -1,13 +1,13 @@
-NOVA PHYSIO AND REHAB CENTER
+METRO BACK CARE PHYSIOTHERAPY
 
-Patient: Priya Sen
+Patient Priya Sen
 
-Document: Physical Therapy Invoice
+Document Physical Therapy Invoice
 
 Service: Physical Therapy Evaluation and Therapeutic Exercise
-Dates of service: 02-Aug-2026, 05-Aug-2026, 09-Aug-2026
-Billing note: back pain rehab plan, bill primary then secondary.
 
-Total charges: INR 52,500
+Dates of service: 01-Aug-2026, 04-Aug-2026, 08-Aug-2028,
 
-billing admin note
+Billing note: lumbar mobility rogram, unpaid invoice for COB review.
+
+Total charges INR20,000

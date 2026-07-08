@@ -86,8 +86,8 @@ Then it reruns the full state machine and refreshes the dashboard. Do not run `s
 ## Default Expected Result
 
 - Total charges: INR 480,000.
-- Total insurer payments: INR 480,000.
-- Household out-of-pocket: INR 0.
+- Total insurer payments: INR 468,000.
+- Household out-of-pocket: INR 12,000.
 
 ## COB Rule Coverage
 
@@ -100,7 +100,7 @@ The rules engine models:
 - Copay by claim type.
 - Coinsurance.
 - Out-of-pocket remaining cap.
-- Residual and lesser-of secondary coordination methods.
+- Lesser-of secondary coordination: the secondary payer pays no more than the remaining liability and no more than its own policy would allow.
 
 ## Security Notes
 
@@ -108,3 +108,14 @@ The rules engine models:
 - Secrets are read from environment variables only.
 - `GEMINI_API_KEY` or `GOOGLE_API_KEY` is optional; deterministic fallbacks are used when absent.
 - `DUCO_UI_TOKEN` can be used for local token protection.
+
+## Optional Gemini Key
+
+For local Gemini-assisted clinical interpretation, copy `.env.example` to `.env` and replace the placeholder value:
+
+```text
+GEMINI_API_KEY=your-real-api-key
+GEMINI_MODEL=gemini-2.5-flash
+```
+
+Do not commit `.env`; it is intentionally ignored by Git.
