@@ -119,3 +119,21 @@ GEMINI_MODEL=gemini-2.5-flash
 ```
 
 Do not commit `.env`; it is intentionally ignored by Git.
+
+## Deploy On Cloud Run
+
+The app is Cloud Run ready through `Dockerfile`. It listens on the `PORT` environment variable and installs Tesseract OCR inside the container.
+
+Basic deployment:
+
+```powershell
+gcloud run deploy duco-agent-ai-assessment --source . --region asia-south1
+```
+
+Set runtime variables in Cloud Run:
+
+```text
+GEMINI_API_KEY
+GEMINI_MODEL=gemini-2.5-flash
+DUCO_UI_TOKEN
+```

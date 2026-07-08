@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -529,8 +530,9 @@ document.querySelectorAll('form').forEach(form => {
 
 def main() -> None:
     mode = "token protected" if ui_token_required() else "local demo"
-    server = ThreadingHTTPServer(("127.0.0.1", 8000), DuCORequestHandler)
-    print(f"DuCO-Agent UI running at http://127.0.0.1:8000 ({mode})")
+    port = int(os.getenv("PORT", "8000"))
+    server = ThreadingHTTPServer(("0.0.0.0", port), DuCORequestHandler)
+    print(f"DuCO-Agent UI running at http://0.0.0.0:{port} ({mode})")
     server.serve_forever()
 
 
