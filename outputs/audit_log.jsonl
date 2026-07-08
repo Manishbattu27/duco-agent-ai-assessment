@@ -168,3 +168,244 @@
 {"timestamp": "2026-06-29T13:41:46.029925+00:00", "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763", "event_type": "enter_step", "step": "output"}
 {"timestamp": "2026-06-29T13:41:46.992095+00:00", "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 962.32, "issues": []}
 {"timestamp": "2026-06-29T13:41:46.993102+00:00", "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T16:48:25.249793+00:00", "run_id": "1edf164d-4d63-4cb9-81b1-073ec862e5fc", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T16:48:25.249793+00:00", "run_id": "1edf164d-4d63-4cb9-81b1-073ec862e5fc", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T16:48:25.252790+00:00", "run_id": "1edf164d-4d63-4cb9-81b1-073ec862e5fc", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 2.05, "issues": []}
+{"timestamp": "2026-07-05T16:48:25.252790+00:00", "run_id": "1edf164d-4d63-4cb9-81b1-073ec862e5fc", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T16:48:25.253792+00:00", "run_id": "1edf164d-4d63-4cb9-81b1-073ec862e5fc", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.13, "issues": []}
+{"timestamp": "2026-07-05T16:48:25.254791+00:00", "run_id": "1edf164d-4d63-4cb9-81b1-073ec862e5fc", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T16:48:25.254791+00:00", "run_id": "1edf164d-4d63-4cb9-81b1-073ec862e5fc", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.07, "issues": []}
+{"timestamp": "2026-07-05T16:48:25.255792+00:00", "run_id": "1edf164d-4d63-4cb9-81b1-073ec862e5fc", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T16:48:26.326415+00:00", "run_id": "1edf164d-4d63-4cb9-81b1-073ec862e5fc", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 1070.43, "issues": []}
+{"timestamp": "2026-07-05T16:48:26.326415+00:00", "run_id": "1edf164d-4d63-4cb9-81b1-073ec862e5fc", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T16:49:25.554659+00:00", "run_id": "8fbad957-7ed5-4134-bcc1-394305972ae5", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T16:49:25.554659+00:00", "run_id": "8fbad957-7ed5-4134-bcc1-394305972ae5", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T16:49:25.556023+00:00", "run_id": "8fbad957-7ed5-4134-bcc1-394305972ae5", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.13, "issues": []}
+{"timestamp": "2026-07-05T16:49:25.557045+00:00", "run_id": "8fbad957-7ed5-4134-bcc1-394305972ae5", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T16:49:25.557045+00:00", "run_id": "8fbad957-7ed5-4134-bcc1-394305972ae5", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.08, "issues": []}
+{"timestamp": "2026-07-05T16:49:25.558045+00:00", "run_id": "8fbad957-7ed5-4134-bcc1-394305972ae5", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T16:49:25.558045+00:00", "run_id": "8fbad957-7ed5-4134-bcc1-394305972ae5", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-07-05T16:49:25.558045+00:00", "run_id": "8fbad957-7ed5-4134-bcc1-394305972ae5", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T16:49:25.737576+00:00", "run_id": "8fbad957-7ed5-4134-bcc1-394305972ae5", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 178.52, "issues": []}
+{"timestamp": "2026-07-05T16:49:25.737576+00:00", "run_id": "8fbad957-7ed5-4134-bcc1-394305972ae5", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T16:49:51.769491+00:00", "run_id": "4b13d9c4-9099-43a0-8afc-7dec02acda2b", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T16:49:51.770491+00:00", "run_id": "4b13d9c4-9099-43a0-8afc-7dec02acda2b", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T16:49:51.771491+00:00", "run_id": "4b13d9c4-9099-43a0-8afc-7dec02acda2b", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.17, "issues": []}
+{"timestamp": "2026-07-05T16:49:51.772484+00:00", "run_id": "4b13d9c4-9099-43a0-8afc-7dec02acda2b", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T16:49:51.772484+00:00", "run_id": "4b13d9c4-9099-43a0-8afc-7dec02acda2b", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.07, "issues": []}
+{"timestamp": "2026-07-05T16:49:51.772484+00:00", "run_id": "4b13d9c4-9099-43a0-8afc-7dec02acda2b", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T16:49:51.773488+00:00", "run_id": "4b13d9c4-9099-43a0-8afc-7dec02acda2b", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.09, "issues": []}
+{"timestamp": "2026-07-05T16:49:51.773488+00:00", "run_id": "4b13d9c4-9099-43a0-8afc-7dec02acda2b", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T16:50:37.557580+00:00", "run_id": "76f849fa-84b9-40b8-a484-88ebafcee67a", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T16:50:37.557580+00:00", "run_id": "76f849fa-84b9-40b8-a484-88ebafcee67a", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T16:50:37.560579+00:00", "run_id": "76f849fa-84b9-40b8-a484-88ebafcee67a", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 2.37, "issues": []}
+{"timestamp": "2026-07-05T16:50:37.561580+00:00", "run_id": "76f849fa-84b9-40b8-a484-88ebafcee67a", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T16:50:37.562580+00:00", "run_id": "76f849fa-84b9-40b8-a484-88ebafcee67a", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.15, "issues": []}
+{"timestamp": "2026-07-05T16:50:37.562580+00:00", "run_id": "76f849fa-84b9-40b8-a484-88ebafcee67a", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T16:50:37.563579+00:00", "run_id": "76f849fa-84b9-40b8-a484-88ebafcee67a", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.11, "issues": []}
+{"timestamp": "2026-07-05T16:50:37.563579+00:00", "run_id": "76f849fa-84b9-40b8-a484-88ebafcee67a", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T16:50:38.664940+00:00", "run_id": "76f849fa-84b9-40b8-a484-88ebafcee67a", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 1100.0, "issues": []}
+{"timestamp": "2026-07-05T16:50:38.664940+00:00", "run_id": "76f849fa-84b9-40b8-a484-88ebafcee67a", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T16:50:43.224819+00:00", "run_id": "a940ac62-0969-449d-a172-a88669bad94d", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T16:50:43.225818+00:00", "run_id": "a940ac62-0969-449d-a172-a88669bad94d", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T16:50:43.227824+00:00", "run_id": "a940ac62-0969-449d-a172-a88669bad94d", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.78, "issues": []}
+{"timestamp": "2026-07-05T16:50:43.228824+00:00", "run_id": "a940ac62-0969-449d-a172-a88669bad94d", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T16:50:43.228824+00:00", "run_id": "a940ac62-0969-449d-a172-a88669bad94d", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.08, "issues": []}
+{"timestamp": "2026-07-05T16:50:43.229828+00:00", "run_id": "a940ac62-0969-449d-a172-a88669bad94d", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T16:50:43.229828+00:00", "run_id": "a940ac62-0969-449d-a172-a88669bad94d", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.08, "issues": []}
+{"timestamp": "2026-07-05T16:50:43.230893+00:00", "run_id": "a940ac62-0969-449d-a172-a88669bad94d", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T16:50:43.437019+00:00", "run_id": "a940ac62-0969-449d-a172-a88669bad94d", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 205.78, "issues": []}
+{"timestamp": "2026-07-05T16:50:43.438021+00:00", "run_id": "a940ac62-0969-449d-a172-a88669bad94d", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T16:50:46.920009+00:00", "run_id": "921df722-33bd-4051-8cb2-0c9f28b17f32", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T16:50:46.920009+00:00", "run_id": "921df722-33bd-4051-8cb2-0c9f28b17f32", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T16:50:46.922020+00:00", "run_id": "921df722-33bd-4051-8cb2-0c9f28b17f32", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.05, "issues": []}
+{"timestamp": "2026-07-05T16:50:46.922020+00:00", "run_id": "921df722-33bd-4051-8cb2-0c9f28b17f32", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T16:50:46.922020+00:00", "run_id": "921df722-33bd-4051-8cb2-0c9f28b17f32", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-07-05T16:50:46.923021+00:00", "run_id": "921df722-33bd-4051-8cb2-0c9f28b17f32", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T16:50:46.923021+00:00", "run_id": "921df722-33bd-4051-8cb2-0c9f28b17f32", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-07-05T16:50:46.924020+00:00", "run_id": "921df722-33bd-4051-8cb2-0c9f28b17f32", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T16:54:38.806038+00:00", "run_id": "2380a385-2641-4a55-9e5f-bc567cf60cce", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T16:54:38.806038+00:00", "run_id": "2380a385-2641-4a55-9e5f-bc567cf60cce", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T16:54:38.809039+00:00", "run_id": "2380a385-2641-4a55-9e5f-bc567cf60cce", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 2.29, "issues": []}
+{"timestamp": "2026-07-05T16:54:38.809039+00:00", "run_id": "2380a385-2641-4a55-9e5f-bc567cf60cce", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T16:54:38.810026+00:00", "run_id": "2380a385-2641-4a55-9e5f-bc567cf60cce", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.09, "issues": []}
+{"timestamp": "2026-07-05T16:54:38.810026+00:00", "run_id": "2380a385-2641-4a55-9e5f-bc567cf60cce", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T16:54:38.811027+00:00", "run_id": "2380a385-2641-4a55-9e5f-bc567cf60cce", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.08, "issues": []}
+{"timestamp": "2026-07-05T16:54:38.812026+00:00", "run_id": "2380a385-2641-4a55-9e5f-bc567cf60cce", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T16:54:39.573405+00:00", "run_id": "2380a385-2641-4a55-9e5f-bc567cf60cce", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 761.77, "issues": []}
+{"timestamp": "2026-07-05T16:54:39.574403+00:00", "run_id": "2380a385-2641-4a55-9e5f-bc567cf60cce", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T16:54:43.614998+00:00", "run_id": "6cbb75cd-8ba3-463b-90a1-511bf14523c9", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T16:54:43.614998+00:00", "run_id": "6cbb75cd-8ba3-463b-90a1-511bf14523c9", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T16:54:43.616992+00:00", "run_id": "6cbb75cd-8ba3-463b-90a1-511bf14523c9", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.1, "issues": []}
+{"timestamp": "2026-07-05T16:54:43.616992+00:00", "run_id": "6cbb75cd-8ba3-463b-90a1-511bf14523c9", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T16:54:43.618015+00:00", "run_id": "6cbb75cd-8ba3-463b-90a1-511bf14523c9", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.15, "issues": []}
+{"timestamp": "2026-07-05T16:54:43.618015+00:00", "run_id": "6cbb75cd-8ba3-463b-90a1-511bf14523c9", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T16:54:43.619004+00:00", "run_id": "6cbb75cd-8ba3-463b-90a1-511bf14523c9", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.12, "issues": []}
+{"timestamp": "2026-07-05T16:54:43.619004+00:00", "run_id": "6cbb75cd-8ba3-463b-90a1-511bf14523c9", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T16:54:43.725463+00:00", "run_id": "6cbb75cd-8ba3-463b-90a1-511bf14523c9", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 106.0, "issues": []}
+{"timestamp": "2026-07-05T16:54:43.726474+00:00", "run_id": "6cbb75cd-8ba3-463b-90a1-511bf14523c9", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T16:54:49.929481+00:00", "run_id": "fbca4f57-15dd-4655-adb7-c77cfdff11a0", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T16:54:49.929481+00:00", "run_id": "fbca4f57-15dd-4655-adb7-c77cfdff11a0", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T16:54:49.931492+00:00", "run_id": "fbca4f57-15dd-4655-adb7-c77cfdff11a0", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.56, "issues": []}
+{"timestamp": "2026-07-05T16:54:49.931492+00:00", "run_id": "fbca4f57-15dd-4655-adb7-c77cfdff11a0", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T16:54:49.932869+00:00", "run_id": "fbca4f57-15dd-4655-adb7-c77cfdff11a0", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-07-05T16:54:49.932869+00:00", "run_id": "fbca4f57-15dd-4655-adb7-c77cfdff11a0", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T16:54:49.932869+00:00", "run_id": "fbca4f57-15dd-4655-adb7-c77cfdff11a0", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-07-05T16:54:49.933876+00:00", "run_id": "fbca4f57-15dd-4655-adb7-c77cfdff11a0", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T16:54:50.055515+00:00", "run_id": "fbca4f57-15dd-4655-adb7-c77cfdff11a0", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 120.75, "issues": []}
+{"timestamp": "2026-07-05T16:54:50.055515+00:00", "run_id": "fbca4f57-15dd-4655-adb7-c77cfdff11a0", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T16:54:59.067872+00:00", "run_id": "cc4662d5-d2bc-4329-8ca6-bad5d813fd06", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T16:54:59.067872+00:00", "run_id": "cc4662d5-d2bc-4329-8ca6-bad5d813fd06", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T16:54:59.070872+00:00", "run_id": "cc4662d5-d2bc-4329-8ca6-bad5d813fd06", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.77, "issues": []}
+{"timestamp": "2026-07-05T16:54:59.070872+00:00", "run_id": "cc4662d5-d2bc-4329-8ca6-bad5d813fd06", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T16:54:59.071871+00:00", "run_id": "cc4662d5-d2bc-4329-8ca6-bad5d813fd06", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 0.07, "issues": []}
+{"timestamp": "2026-07-05T16:54:59.071871+00:00", "run_id": "cc4662d5-d2bc-4329-8ca6-bad5d813fd06", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T16:54:59.071871+00:00", "run_id": "cc4662d5-d2bc-4329-8ca6-bad5d813fd06", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.07, "issues": []}
+{"timestamp": "2026-07-05T16:54:59.072871+00:00", "run_id": "cc4662d5-d2bc-4329-8ca6-bad5d813fd06", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T16:54:59.174823+00:00", "run_id": "cc4662d5-d2bc-4329-8ca6-bad5d813fd06", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 101.38, "issues": []}
+{"timestamp": "2026-07-05T16:54:59.174823+00:00", "run_id": "cc4662d5-d2bc-4329-8ca6-bad5d813fd06", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T17:16:00.512189+00:00", "run_id": "a057fe63-86fa-4e9d-be80-285dc1e10262", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T17:16:00.512189+00:00", "run_id": "a057fe63-86fa-4e9d-be80-285dc1e10262", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T17:16:00.514189+00:00", "run_id": "a057fe63-86fa-4e9d-be80-285dc1e10262", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.56, "issues": []}
+{"timestamp": "2026-07-05T17:16:00.515189+00:00", "run_id": "a057fe63-86fa-4e9d-be80-285dc1e10262", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T17:16:02.184776+00:00", "run_id": "a057fe63-86fa-4e9d-be80-285dc1e10262", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 1669.81, "issues": []}
+{"timestamp": "2026-07-05T17:16:02.185775+00:00", "run_id": "a057fe63-86fa-4e9d-be80-285dc1e10262", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T17:16:02.186786+00:00", "run_id": "a057fe63-86fa-4e9d-be80-285dc1e10262", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.14, "issues": []}
+{"timestamp": "2026-07-05T17:16:02.186786+00:00", "run_id": "a057fe63-86fa-4e9d-be80-285dc1e10262", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T17:16:02.759035+00:00", "run_id": "a057fe63-86fa-4e9d-be80-285dc1e10262", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 571.18, "issues": []}
+{"timestamp": "2026-07-05T17:16:02.759035+00:00", "run_id": "a057fe63-86fa-4e9d-be80-285dc1e10262", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T17:21:07.058319+00:00", "run_id": "9ea279e8-46a0-4729-a270-b5e0c9d0adf2", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T17:21:07.058319+00:00", "run_id": "9ea279e8-46a0-4729-a270-b5e0c9d0adf2", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T17:21:07.060320+00:00", "run_id": "9ea279e8-46a0-4729-a270-b5e0c9d0adf2", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.68, "issues": []}
+{"timestamp": "2026-07-05T17:21:07.061395+00:00", "run_id": "9ea279e8-46a0-4729-a270-b5e0c9d0adf2", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T17:21:08.272092+00:00", "run_id": "9ea279e8-46a0-4729-a270-b5e0c9d0adf2", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 1211.24, "issues": []}
+{"timestamp": "2026-07-05T17:21:08.273091+00:00", "run_id": "9ea279e8-46a0-4729-a270-b5e0c9d0adf2", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T17:21:08.274092+00:00", "run_id": "9ea279e8-46a0-4729-a270-b5e0c9d0adf2", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.15, "issues": []}
+{"timestamp": "2026-07-05T17:21:08.274092+00:00", "run_id": "9ea279e8-46a0-4729-a270-b5e0c9d0adf2", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T17:21:08.832211+00:00", "run_id": "9ea279e8-46a0-4729-a270-b5e0c9d0adf2", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 557.95, "issues": []}
+{"timestamp": "2026-07-05T17:21:08.833216+00:00", "run_id": "9ea279e8-46a0-4729-a270-b5e0c9d0adf2", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T17:22:25.692553+00:00", "run_id": "f3003a36-6a54-4144-90a0-5e30fd3847b9", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T17:22:25.692553+00:00", "run_id": "f3003a36-6a54-4144-90a0-5e30fd3847b9", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T17:22:25.694625+00:00", "run_id": "f3003a36-6a54-4144-90a0-5e30fd3847b9", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.57, "issues": []}
+{"timestamp": "2026-07-05T17:22:25.695618+00:00", "run_id": "f3003a36-6a54-4144-90a0-5e30fd3847b9", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T17:22:43.655673+00:00", "run_id": "f3003a36-6a54-4144-90a0-5e30fd3847b9", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 17959.95, "issues": []}
+{"timestamp": "2026-07-05T17:22:43.656667+00:00", "run_id": "f3003a36-6a54-4144-90a0-5e30fd3847b9", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T17:22:43.657604+00:00", "run_id": "f3003a36-6a54-4144-90a0-5e30fd3847b9", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.08, "issues": []}
+{"timestamp": "2026-07-05T17:22:43.658679+00:00", "run_id": "f3003a36-6a54-4144-90a0-5e30fd3847b9", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T17:22:44.115082+00:00", "run_id": "f3003a36-6a54-4144-90a0-5e30fd3847b9", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 455.89, "issues": []}
+{"timestamp": "2026-07-05T17:22:44.115082+00:00", "run_id": "f3003a36-6a54-4144-90a0-5e30fd3847b9", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T17:27:24.059626+00:00", "run_id": "1d6d80f8-b6e5-4a7c-8ab7-539731c1ddc7", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T17:27:24.060652+00:00", "run_id": "1d6d80f8-b6e5-4a7c-8ab7-539731c1ddc7", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T17:27:24.062645+00:00", "run_id": "1d6d80f8-b6e5-4a7c-8ab7-539731c1ddc7", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.97, "issues": []}
+{"timestamp": "2026-07-05T17:27:24.063634+00:00", "run_id": "1d6d80f8-b6e5-4a7c-8ab7-539731c1ddc7", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T17:27:44.698035+00:00", "run_id": "1d6d80f8-b6e5-4a7c-8ab7-539731c1ddc7", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 20634.45, "issues": []}
+{"timestamp": "2026-07-05T17:27:44.700034+00:00", "run_id": "1d6d80f8-b6e5-4a7c-8ab7-539731c1ddc7", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T17:27:44.700034+00:00", "run_id": "1d6d80f8-b6e5-4a7c-8ab7-539731c1ddc7", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.08, "issues": []}
+{"timestamp": "2026-07-05T17:27:44.701034+00:00", "run_id": "1d6d80f8-b6e5-4a7c-8ab7-539731c1ddc7", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T17:27:45.274244+00:00", "run_id": "1d6d80f8-b6e5-4a7c-8ab7-539731c1ddc7", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 572.82, "issues": []}
+{"timestamp": "2026-07-05T17:27:45.274244+00:00", "run_id": "1d6d80f8-b6e5-4a7c-8ab7-539731c1ddc7", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T17:28:02.066293+00:00", "run_id": "ffdf58ac-f95c-4a2c-917e-f0b9ce0f3282", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T17:28:02.067375+00:00", "run_id": "ffdf58ac-f95c-4a2c-917e-f0b9ce0f3282", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T17:28:02.069351+00:00", "run_id": "ffdf58ac-f95c-4a2c-917e-f0b9ce0f3282", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.35, "issues": []}
+{"timestamp": "2026-07-05T17:28:02.069351+00:00", "run_id": "ffdf58ac-f95c-4a2c-917e-f0b9ce0f3282", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T17:28:18.320029+00:00", "run_id": "ffdf58ac-f95c-4a2c-917e-f0b9ce0f3282", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 16249.65, "issues": []}
+{"timestamp": "2026-07-05T17:28:18.320029+00:00", "run_id": "ffdf58ac-f95c-4a2c-917e-f0b9ce0f3282", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T17:28:18.321021+00:00", "run_id": "ffdf58ac-f95c-4a2c-917e-f0b9ce0f3282", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-07-05T17:28:18.321021+00:00", "run_id": "ffdf58ac-f95c-4a2c-917e-f0b9ce0f3282", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T17:28:18.413903+00:00", "run_id": "ffdf58ac-f95c-4a2c-917e-f0b9ce0f3282", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 91.96, "issues": []}
+{"timestamp": "2026-07-05T17:28:18.413903+00:00", "run_id": "ffdf58ac-f95c-4a2c-917e-f0b9ce0f3282", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T17:30:19.142678+00:00", "run_id": "6daa9a5e-f8e3-476d-a477-246a0a186350", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T17:30:19.142678+00:00", "run_id": "6daa9a5e-f8e3-476d-a477-246a0a186350", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T17:30:19.145677+00:00", "run_id": "6daa9a5e-f8e3-476d-a477-246a0a186350", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 2.44, "issues": []}
+{"timestamp": "2026-07-05T17:30:19.146692+00:00", "run_id": "6daa9a5e-f8e3-476d-a477-246a0a186350", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T17:30:34.617118+00:00", "run_id": "6daa9a5e-f8e3-476d-a477-246a0a186350", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 15470.17, "issues": []}
+{"timestamp": "2026-07-05T17:30:34.618108+00:00", "run_id": "6daa9a5e-f8e3-476d-a477-246a0a186350", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T17:30:34.619109+00:00", "run_id": "6daa9a5e-f8e3-476d-a477-246a0a186350", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.1, "issues": []}
+{"timestamp": "2026-07-05T17:30:34.619109+00:00", "run_id": "6daa9a5e-f8e3-476d-a477-246a0a186350", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T17:30:35.040426+00:00", "run_id": "6daa9a5e-f8e3-476d-a477-246a0a186350", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 420.24, "issues": []}
+{"timestamp": "2026-07-05T17:30:35.040426+00:00", "run_id": "6daa9a5e-f8e3-476d-a477-246a0a186350", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T17:31:27.213997+00:00", "run_id": "a1ee647c-485c-4781-9815-86eda60dccf3", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T17:31:27.213997+00:00", "run_id": "a1ee647c-485c-4781-9815-86eda60dccf3", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T17:31:27.216004+00:00", "run_id": "a1ee647c-485c-4781-9815-86eda60dccf3", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": false, "duration_ms": 1.03, "issues": ["MRI text did not include ACL evidence."]}
+{"timestamp": "2026-07-05T17:31:27.216990+00:00", "run_id": "a1ee647c-485c-4781-9815-86eda60dccf3", "event_type": "validate_step", "step": "intake", "attempt": 2, "ok": false, "duration_ms": 0.85, "issues": ["MRI text did not include ACL evidence."]}
+{"timestamp": "2026-07-05T17:31:27.217989+00:00", "run_id": "a1ee647c-485c-4781-9815-86eda60dccf3", "event_type": "run_failed", "status": "failed", "error": {"type": "RuntimeError", "message": "{\n  \"ok\": false,\n  \"issues\": [\n    \"intake failed validation after 2 attempts\"\n  ]\n}"}}
+{"timestamp": "2026-07-05T17:38:22.312358+00:00", "run_id": "550a65f7-eb76-4ce8-9b22-227f6a298448", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T17:38:22.312358+00:00", "run_id": "550a65f7-eb76-4ce8-9b22-227f6a298448", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T17:38:22.315401+00:00", "run_id": "550a65f7-eb76-4ce8-9b22-227f6a298448", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.91, "issues": []}
+{"timestamp": "2026-07-05T17:38:22.315401+00:00", "run_id": "550a65f7-eb76-4ce8-9b22-227f6a298448", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T17:38:49.398342+00:00", "run_id": "550a65f7-eb76-4ce8-9b22-227f6a298448", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 27082.58, "issues": []}
+{"timestamp": "2026-07-05T17:38:49.399356+00:00", "run_id": "550a65f7-eb76-4ce8-9b22-227f6a298448", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T17:38:49.400379+00:00", "run_id": "550a65f7-eb76-4ce8-9b22-227f6a298448", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.1, "issues": []}
+{"timestamp": "2026-07-05T17:38:49.401349+00:00", "run_id": "550a65f7-eb76-4ce8-9b22-227f6a298448", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T17:38:50.126017+00:00", "run_id": "550a65f7-eb76-4ce8-9b22-227f6a298448", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 724.89, "issues": []}
+{"timestamp": "2026-07-05T17:38:50.127017+00:00", "run_id": "550a65f7-eb76-4ce8-9b22-227f6a298448", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-05T17:51:51.677399+00:00", "run_id": "b1ae337c-405c-411c-aaaf-6708c3e3de02", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-05T17:51:51.678415+00:00", "run_id": "b1ae337c-405c-411c-aaaf-6708c3e3de02", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-05T17:51:51.679395+00:00", "run_id": "b1ae337c-405c-411c-aaaf-6708c3e3de02", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 0.94, "issues": []}
+{"timestamp": "2026-07-05T17:51:51.680403+00:00", "run_id": "b1ae337c-405c-411c-aaaf-6708c3e3de02", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-05T17:52:05.934397+00:00", "run_id": "b1ae337c-405c-411c-aaaf-6708c3e3de02", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 14253.84, "issues": []}
+{"timestamp": "2026-07-05T17:52:05.935398+00:00", "run_id": "b1ae337c-405c-411c-aaaf-6708c3e3de02", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-05T17:52:05.935398+00:00", "run_id": "b1ae337c-405c-411c-aaaf-6708c3e3de02", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.06, "issues": []}
+{"timestamp": "2026-07-05T17:52:05.936915+00:00", "run_id": "b1ae337c-405c-411c-aaaf-6708c3e3de02", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-05T17:52:06.023345+00:00", "run_id": "b1ae337c-405c-411c-aaaf-6708c3e3de02", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 84.26, "issues": []}
+{"timestamp": "2026-07-05T17:52:06.023345+00:00", "run_id": "b1ae337c-405c-411c-aaaf-6708c3e3de02", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-08T12:03:22.803366+00:00", "run_id": "8024b845-2a1b-4aaf-970a-9707d866e0ed", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-08T12:03:22.804363+00:00", "run_id": "8024b845-2a1b-4aaf-970a-9707d866e0ed", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-08T12:03:22.807367+00:00", "run_id": "8024b845-2a1b-4aaf-970a-9707d866e0ed", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.96, "issues": []}
+{"timestamp": "2026-07-08T12:03:22.807367+00:00", "run_id": "8024b845-2a1b-4aaf-970a-9707d866e0ed", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-08T12:03:49.867594+00:00", "run_id": "8024b845-2a1b-4aaf-970a-9707d866e0ed", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 27059.62, "issues": []}
+{"timestamp": "2026-07-08T12:03:49.867594+00:00", "run_id": "8024b845-2a1b-4aaf-970a-9707d866e0ed", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-08T12:03:49.869098+00:00", "run_id": "8024b845-2a1b-4aaf-970a-9707d866e0ed", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.11, "issues": []}
+{"timestamp": "2026-07-08T12:03:49.869098+00:00", "run_id": "8024b845-2a1b-4aaf-970a-9707d866e0ed", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-08T12:03:50.496595+00:00", "run_id": "8024b845-2a1b-4aaf-970a-9707d866e0ed", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 627.18, "issues": []}
+{"timestamp": "2026-07-08T12:03:50.496595+00:00", "run_id": "8024b845-2a1b-4aaf-970a-9707d866e0ed", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-08T12:05:05.068021+00:00", "run_id": "cc2333c2-b170-40dd-95b2-075324dded7f", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-08T12:05:05.069020+00:00", "run_id": "cc2333c2-b170-40dd-95b2-075324dded7f", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-08T12:05:05.070954+00:00", "run_id": "cc2333c2-b170-40dd-95b2-075324dded7f", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.59, "issues": []}
+{"timestamp": "2026-07-08T12:05:05.070954+00:00", "run_id": "cc2333c2-b170-40dd-95b2-075324dded7f", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-08T12:05:23.754715+00:00", "run_id": "cc2333c2-b170-40dd-95b2-075324dded7f", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 18682.93, "issues": []}
+{"timestamp": "2026-07-08T12:05:23.754715+00:00", "run_id": "cc2333c2-b170-40dd-95b2-075324dded7f", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-08T12:05:23.755718+00:00", "run_id": "cc2333c2-b170-40dd-95b2-075324dded7f", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.08, "issues": []}
+{"timestamp": "2026-07-08T12:05:23.755718+00:00", "run_id": "cc2333c2-b170-40dd-95b2-075324dded7f", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-08T12:05:24.306813+00:00", "run_id": "cc2333c2-b170-40dd-95b2-075324dded7f", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 550.24, "issues": []}
+{"timestamp": "2026-07-08T12:05:24.307828+00:00", "run_id": "cc2333c2-b170-40dd-95b2-075324dded7f", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-08T12:15:03.641570+00:00", "run_id": "de8c4fc1-0fea-4c48-b3b5-bbbd466f12de", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-08T12:15:03.641570+00:00", "run_id": "de8c4fc1-0fea-4c48-b3b5-bbbd466f12de", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-08T12:15:03.643569+00:00", "run_id": "de8c4fc1-0fea-4c48-b3b5-bbbd466f12de", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.61, "issues": []}
+{"timestamp": "2026-07-08T12:15:03.644569+00:00", "run_id": "de8c4fc1-0fea-4c48-b3b5-bbbd466f12de", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-08T12:15:32.394822+00:00", "run_id": "de8c4fc1-0fea-4c48-b3b5-bbbd466f12de", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 28750.69, "issues": []}
+{"timestamp": "2026-07-08T12:15:32.395820+00:00", "run_id": "de8c4fc1-0fea-4c48-b3b5-bbbd466f12de", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-08T12:15:32.396817+00:00", "run_id": "de8c4fc1-0fea-4c48-b3b5-bbbd466f12de", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.11, "issues": []}
+{"timestamp": "2026-07-08T12:15:32.397818+00:00", "run_id": "de8c4fc1-0fea-4c48-b3b5-bbbd466f12de", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-08T12:15:33.061932+00:00", "run_id": "de8c4fc1-0fea-4c48-b3b5-bbbd466f12de", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 664.04, "issues": []}
+{"timestamp": "2026-07-08T12:15:33.061932+00:00", "run_id": "de8c4fc1-0fea-4c48-b3b5-bbbd466f12de", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-08T12:33:52.944022+00:00", "run_id": "896d6c0a-ecea-4bd4-a4c3-3aa61bf97824", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-08T12:33:52.944022+00:00", "run_id": "896d6c0a-ecea-4bd4-a4c3-3aa61bf97824", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-08T12:33:52.946028+00:00", "run_id": "896d6c0a-ecea-4bd4-a4c3-3aa61bf97824", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.64, "issues": []}
+{"timestamp": "2026-07-08T12:33:52.946028+00:00", "run_id": "896d6c0a-ecea-4bd4-a4c3-3aa61bf97824", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-08T12:34:13.843536+00:00", "run_id": "896d6c0a-ecea-4bd4-a4c3-3aa61bf97824", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 20896.06, "issues": []}
+{"timestamp": "2026-07-08T12:34:13.845534+00:00", "run_id": "896d6c0a-ecea-4bd4-a4c3-3aa61bf97824", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-08T12:34:13.845534+00:00", "run_id": "896d6c0a-ecea-4bd4-a4c3-3aa61bf97824", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.1, "issues": []}
+{"timestamp": "2026-07-08T12:34:13.846536+00:00", "run_id": "896d6c0a-ecea-4bd4-a4c3-3aa61bf97824", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-08T12:34:14.655399+00:00", "run_id": "896d6c0a-ecea-4bd4-a4c3-3aa61bf97824", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 808.46, "issues": []}
+{"timestamp": "2026-07-08T12:34:14.655399+00:00", "run_id": "896d6c0a-ecea-4bd4-a4c3-3aa61bf97824", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-08T12:42:22.142134+00:00", "run_id": "b10285ab-6062-41b0-94ec-46acc3389758", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-08T12:42:22.142134+00:00", "run_id": "b10285ab-6062-41b0-94ec-46acc3389758", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-08T12:42:22.145133+00:00", "run_id": "b10285ab-6062-41b0-94ec-46acc3389758", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 2.16, "issues": []}
+{"timestamp": "2026-07-08T12:42:22.145133+00:00", "run_id": "b10285ab-6062-41b0-94ec-46acc3389758", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-08T12:42:43.459715+00:00", "run_id": "b10285ab-6062-41b0-94ec-46acc3389758", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 21314.56, "issues": []}
+{"timestamp": "2026-07-08T12:42:43.461299+00:00", "run_id": "b10285ab-6062-41b0-94ec-46acc3389758", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-08T12:42:43.462314+00:00", "run_id": "b10285ab-6062-41b0-94ec-46acc3389758", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.26, "issues": []}
+{"timestamp": "2026-07-08T12:42:43.463307+00:00", "run_id": "b10285ab-6062-41b0-94ec-46acc3389758", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-08T12:42:44.017781+00:00", "run_id": "b10285ab-6062-41b0-94ec-46acc3389758", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 554.08, "issues": []}
+{"timestamp": "2026-07-08T12:42:44.017781+00:00", "run_id": "b10285ab-6062-41b0-94ec-46acc3389758", "event_type": "run_completed", "status": "complete"}
+{"timestamp": "2026-07-08T12:45:00.754216+00:00", "run_id": "55f10de7-a554-4672-b26b-3a96b1989411", "event_type": "run_started", "status": "running"}
+{"timestamp": "2026-07-08T12:45:00.754216+00:00", "run_id": "55f10de7-a554-4672-b26b-3a96b1989411", "event_type": "enter_step", "step": "intake"}
+{"timestamp": "2026-07-08T12:45:00.756525+00:00", "run_id": "55f10de7-a554-4672-b26b-3a96b1989411", "event_type": "validate_step", "step": "intake", "attempt": 1, "ok": true, "duration_ms": 1.25, "issues": []}
+{"timestamp": "2026-07-08T12:45:00.756525+00:00", "run_id": "55f10de7-a554-4672-b26b-3a96b1989411", "event_type": "enter_step", "step": "clinical"}
+{"timestamp": "2026-07-08T12:45:17.892007+00:00", "run_id": "55f10de7-a554-4672-b26b-3a96b1989411", "event_type": "validate_step", "step": "clinical", "attempt": 1, "ok": true, "duration_ms": 17135.01, "issues": []}
+{"timestamp": "2026-07-08T12:45:17.893001+00:00", "run_id": "55f10de7-a554-4672-b26b-3a96b1989411", "event_type": "enter_step", "step": "cob"}
+{"timestamp": "2026-07-08T12:45:17.894001+00:00", "run_id": "55f10de7-a554-4672-b26b-3a96b1989411", "event_type": "validate_step", "step": "cob", "attempt": 1, "ok": true, "duration_ms": 0.11, "issues": []}
+{"timestamp": "2026-07-08T12:45:17.894001+00:00", "run_id": "55f10de7-a554-4672-b26b-3a96b1989411", "event_type": "enter_step", "step": "output"}
+{"timestamp": "2026-07-08T12:45:18.004948+00:00", "run_id": "55f10de7-a554-4672-b26b-3a96b1989411", "event_type": "validate_step", "step": "output", "attempt": 1, "ok": true, "duration_ms": 110.14, "issues": []}
+{"timestamp": "2026-07-08T12:45:18.004948+00:00", "run_id": "55f10de7-a554-4672-b26b-3a96b1989411", "event_type": "run_completed", "status": "complete"}

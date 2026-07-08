@@ -19,7 +19,7 @@ def test_aarav_surgery_cob_balances_to_charge():
     assert result["primary_paid_inr"] == 336000
     assert result["secondary_paid_inr"] == 114000
     assert result["patient_paid_inr"] == 0
-    assert result["primary_paid_inr"] + result["secondary_paid_inr"] == 450000
+    assert result["primary_paid_inr"] + result["secondary_paid_inr"] + result["patient_paid_inr"] == 450000
     assert result["allowed_amount_inr"] == 450000
     assert result["primary_copay_inr"] == 0
     assert result["non_covered_amount_inr"] == 0
@@ -41,8 +41,8 @@ def test_priya_pt_cob_balances_to_charge():
     assert result["primary_plan"] == "plan_a"
     assert result["secondary_plan"] == "plan_b"
     assert result["primary_paid_inr"] == 18000
-    assert result["secondary_paid_inr"] == 12000
-    assert result["patient_paid_inr"] == 0
+    assert result["secondary_paid_inr"] == 0
+    assert result["patient_paid_inr"] == 12000
 
 
 def test_primary_payment_models_allowed_amount_copay_and_oop_cap():

@@ -18,6 +18,9 @@ def write_cost_flow_chart(claims: list[dict[str, Any]], output_dir: Path) -> lis
 
 
 def _write_matplotlib_png(claims: list[dict[str, Any]], png_path: Path) -> None:
+    import matplotlib
+
+    matplotlib.use("Agg", force=True)
     import matplotlib.pyplot as plt
 
     labels = [claim["claim_id"] for claim in claims]

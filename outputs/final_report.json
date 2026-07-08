@@ -1,9 +1,9 @@
 {
   "intake": {
     "raw_documents": {
-      "priya_pt_invoice": "NOVA PHYSIO AND REHAB CENTER\n\nPatient: Priya Sen\n\nDocument: Physical Therapy Invoice\n\nService: Physical Therapy Evaluation and Therapeutic Exercise\nDates of service: 02-Aug-2026, 05-Aug-2026, 09-Aug-2026\nBilling note: back pain rehab plan, bill primary then secondary.\n\nTotal charges: INR 52,500\n\nbilling admin note",
-      "aarav_mri_report": "Radiant Knee Imaging Center\nPatient: Aarav Sen\nMRI Right Knee Report\nClinical history: twisting sports injury with instability.\nFindings: Complete tear of the anterior cruciate ligament ACL.\nAdditional finding: Medial meniscus tear involving posterior horn.\nImpression: Complete ACL tear with medial meniscus tear. Surgical consultation advised.",
-      "surgeon_estimate": "APEX SPORTS ORTHOPEDIC SURGERY\n\nPatient: Aarav Sen\n\nSurgery estimate for ACL and meniscus repair\nCPT 29888 (Arthroscopically aided ACL reconstruction) - INR 4,10,000\nCPT 29881 (Arthroscopy, knee, surgical; with meniscectomy) - INR 1,25,000\n\nEstimated total: INR 5,35,000\n\nbilling admin note",
+      "priya_pt_invoice": "METRO BACK CARE PHYSIOTHERAPY\n\nPatient Priya Sen\n\nDocument Physical Therapy Invoice\n\nService: Physical Therapy Evaluation and Therapeutic Exercise\n\nDates of service: 01-Aug-2026, 04-Aug-2026, 08-Aug-2028,\n\nBilling note: lumbar mobility rogram, unpaid invoice for COB review.\n\nTotal charges INR20,000",
+      "aarav_mri_report": "MUMBAI ADVANCED RADIOLOGY\nPatient: Aarav Sen\nMRI Right Knee\nFindings: Full thickness tear of the anterior cruciate ligament (ACL). Peripheral medial meniscus tear is\nImpression: ACL tear with medial meniscus tear. Surgical management may be clinically indicated.",
+      "surgeon_estimate": "PRECISION KNEE AND SPORTS SURGERY\n\nPatient Aarav Sen,\n\nProcedure estimate for ACL reconstruction and meniscussurgery\n\n(CPT 29888 - Arthroscopically aided ACL reconstruction -INR6,10,000\n\n(CPT 29881 - Arthroscopy knee, surgical with meniscectomy INB1,10,000\n\nEstimated tla INR7,20,000,",
       "user_query": "Hi DuCO-Agent, I need to get my knee operated on soon, and Priya has some physical therapy bills lying around. We have Insurer1 (Plan A) and Insurer2 (Plan B). Can you help us figure out which plan pays first for my surgery and her bills? How much will we actually have to pay out of our own pocket? Also, we need the pre-auth letters generated for both insurers so we don't end up with a claim rejection. Please help!"
     },
     "people": {
@@ -25,7 +25,7 @@
         "claim_type": "physical_therapy",
         "status": "incurred_unpaid",
         "description": "Physical Therapy Evaluation and Therapeutic Exercise",
-        "charge_inr": 52500,
+        "charge_inr": 20000,
         "source": "priya_pt_invoice.png"
       },
       {
@@ -34,21 +34,16 @@
         "claim_type": "surgery",
         "status": "planned",
         "description": "ACL reconstruction with meniscectomy",
-        "clinical_text": "Radiant Knee Imaging Center\nPatient: Aarav Sen\nMRI Right Knee Report\nClinical history: twisting sports injury with instability.\nFindings: Complete tear of the anterior cruciate ligament ACL.\nAdditional finding: Medial meniscus tear involving posterior horn.\nImpression: Complete ACL tear with medial meniscus tear. Surgical consultation advised.",
+        "clinical_text": "MUMBAI ADVANCED RADIOLOGY\nPatient: Aarav Sen\nMRI Right Knee\nFindings: Full thickness tear of the anterior cruciate ligament (ACL). Peripheral medial meniscus tear is\nImpression: ACL tear with medial meniscus tear. Surgical management may be clinically indicated.",
         "procedures": [
           {
             "cpt": "29888",
             "description": "Arthroscopically aided ACL reconstruction",
-            "charge_inr": 410000
-          },
-          {
-            "cpt": "29881",
-            "description": "Arthroscopy, knee, surgical; with meniscectomy",
-            "charge_inr": 125000
+            "charge_inr": 610000
           }
         ],
-        "charge_inr": 535000,
-        "procedure_total_inr": 535000,
+        "charge_inr": 610000,
+        "procedure_total_inr": 610000,
         "reconciliation_note": null,
         "source": "surgeon_estimate.jpg"
       }
@@ -62,7 +57,7 @@
         "claim_type": "physical_therapy",
         "status": "incurred_unpaid",
         "description": "Physical Therapy Evaluation and Therapeutic Exercise",
-        "charge_inr": 52500,
+        "charge_inr": 20000,
         "source": "priya_pt_invoice.png",
         "diagnosis": [
           "Chronic low back pain"
@@ -81,7 +76,9 @@
           }
         ],
         "preauth_required": false,
-        "clinical_rationale": "PT invoice describes evaluation and therapeutic exercise for chronic back pain."
+        "medical_necessity_supported": true,
+        "clinical_rationale": "PT invoice describes evaluation and therapeutic exercise for chronic back pain.",
+        "clinical_reference_source": "Deterministic fallback rule set"
       },
       {
         "claim_id": "AARAV-ACL-001",
@@ -89,46 +86,39 @@
         "claim_type": "surgery",
         "status": "planned",
         "description": "ACL reconstruction with meniscectomy",
-        "clinical_text": "Radiant Knee Imaging Center\nPatient: Aarav Sen\nMRI Right Knee Report\nClinical history: twisting sports injury with instability.\nFindings: Complete tear of the anterior cruciate ligament ACL.\nAdditional finding: Medial meniscus tear involving posterior horn.\nImpression: Complete ACL tear with medial meniscus tear. Surgical consultation advised.",
+        "clinical_text": "MUMBAI ADVANCED RADIOLOGY\nPatient: Aarav Sen\nMRI Right Knee\nFindings: Full thickness tear of the anterior cruciate ligament (ACL). Peripheral medial meniscus tear is\nImpression: ACL tear with medial meniscus tear. Surgical management may be clinically indicated.",
         "procedures": [
           {
             "cpt": "29888",
             "description": "Arthroscopically aided ACL reconstruction",
-            "charge_inr": 410000
-          },
-          {
-            "cpt": "29881",
-            "description": "Arthroscopy, knee, surgical; with meniscectomy",
-            "charge_inr": 125000
+            "charge_inr": 610000
           }
         ],
-        "charge_inr": 535000,
-        "procedure_total_inr": 535000,
+        "charge_inr": 610000,
+        "procedure_total_inr": 610000,
         "reconciliation_note": null,
         "source": "surgeon_estimate.jpg",
         "diagnosis": [
-          "Complete ACL tear",
-          "Medial meniscus tear"
+          "Full thickness tear of anterior cruciate ligament (ACL) of right knee",
+          "Peripheral medial meniscus tear of right knee"
         ],
         "icd10_codes": [
-          "S83.512A",
-          "S83.242A"
+          "S83.211A",
+          "S83.221A"
         ],
         "cpt_codes": [
           {
             "cpt": "29888",
             "description": "Arthroscopically aided ACL reconstruction"
-          },
-          {
-            "cpt": "29881",
-            "description": "Arthroscopy, knee, surgical; with meniscectomy"
           }
         ],
         "preauth_required": true,
-        "clinical_rationale": "MRI confirms ACL tear and medial meniscus tear; surgical CPTs are high-cost procedures."
+        "medical_necessity_supported": true,
+        "clinical_rationale": "MRI findings confirm a full thickness tear of the anterior cruciate ligament (ACL) and a peripheral medial meniscus tear in the right knee. The impression states surgical management may be clinically indicated for these injuries. The proposed CPT code 29888 (Arthroscopically aided ACL reconstruction) is consistent with the diagnosed ACL tear.",
+        "clinical_reference_source": "Gemini medical coding review"
       }
     ],
-    "medical_summary": "PRIYA-PT-001: Chronic low back pain. CPT: 97161, 97110.\nAARAV-ACL-001: Complete ACL tear, Medial meniscus tear. CPT: 29888, 29881."
+    "medical_summary": "PRIYA-PT-001: Chronic low back pain. CPT: 97161, 97110.\nAARAV-ACL-001: Full thickness tear of anterior cruciate ligament (ACL) of right knee, Peripheral medial meniscus tear of right knee. CPT: 29888."
   },
   "cob": {
     "claims": [
@@ -138,7 +128,7 @@
         "claim_type": "physical_therapy",
         "status": "incurred_unpaid",
         "description": "Physical Therapy Evaluation and Therapeutic Exercise",
-        "charge_inr": 52500,
+        "charge_inr": 20000,
         "source": "priya_pt_invoice.png",
         "diagnosis": [
           "Chronic low back pain"
@@ -157,23 +147,25 @@
           }
         ],
         "preauth_required": false,
+        "medical_necessity_supported": true,
         "clinical_rationale": "PT invoice describes evaluation and therapeutic exercise for chronic back pain.",
+        "clinical_reference_source": "Deterministic fallback rule set",
         "member_name": "Priya Sen",
         "primary_plan": "plan_a",
         "primary_plan_label": "Insurer1 / Plan A",
         "secondary_plan": "plan_b",
         "secondary_plan_label": "Insurer2 / Plan B",
-        "billed_amount_inr": 52500,
-        "allowed_amount_inr": 52500,
+        "billed_amount_inr": 20000,
+        "allowed_amount_inr": 20000,
         "non_covered_amount_inr": 0,
         "primary_copay_inr": 0,
         "primary_deductible_applied_inr": 10000,
-        "primary_coinsurance_inr": 4250,
-        "primary_oop_applied_inr": 14250,
-        "primary_paid_inr": 38250,
-        "secondary_paid_inr": 14250,
-        "patient_paid_inr": 0,
-        "cob_explanation": "Insurer1/Plan A is primary and pays INR 38,250 after INR 10,000 deductible, INR 0 copay, and INR 4,250 coinsurance. Insurer2/Plan B is secondary and pays INR 14,250 toward the residual. Patient responsibility is INR 0 on INR 52,500 billed charges."
+        "primary_coinsurance_inr": 1000,
+        "primary_oop_applied_inr": 11000,
+        "primary_paid_inr": 9000,
+        "secondary_paid_inr": 0,
+        "patient_paid_inr": 11000,
+        "cob_explanation": "Insurer1/Plan A is primary and pays INR 9,000 after INR 10,000 deductible, INR 0 copay, and INR 1,000 coinsurance. Insurer2/Plan B is secondary and pays INR 0 toward the residual. Patient responsibility is INR 11,000 on INR 20,000 billed charges."
       },
       {
         "claim_id": "AARAV-ACL-001",
@@ -181,120 +173,113 @@
         "claim_type": "surgery",
         "status": "planned",
         "description": "ACL reconstruction with meniscectomy",
-        "clinical_text": "Radiant Knee Imaging Center\nPatient: Aarav Sen\nMRI Right Knee Report\nClinical history: twisting sports injury with instability.\nFindings: Complete tear of the anterior cruciate ligament ACL.\nAdditional finding: Medial meniscus tear involving posterior horn.\nImpression: Complete ACL tear with medial meniscus tear. Surgical consultation advised.",
+        "clinical_text": "MUMBAI ADVANCED RADIOLOGY\nPatient: Aarav Sen\nMRI Right Knee\nFindings: Full thickness tear of the anterior cruciate ligament (ACL). Peripheral medial meniscus tear is\nImpression: ACL tear with medial meniscus tear. Surgical management may be clinically indicated.",
         "procedures": [
           {
             "cpt": "29888",
             "description": "Arthroscopically aided ACL reconstruction",
-            "charge_inr": 410000
-          },
-          {
-            "cpt": "29881",
-            "description": "Arthroscopy, knee, surgical; with meniscectomy",
-            "charge_inr": 125000
+            "charge_inr": 610000
           }
         ],
-        "charge_inr": 535000,
-        "procedure_total_inr": 535000,
+        "charge_inr": 610000,
+        "procedure_total_inr": 610000,
         "reconciliation_note": null,
         "source": "surgeon_estimate.jpg",
         "diagnosis": [
-          "Complete ACL tear",
-          "Medial meniscus tear"
+          "Full thickness tear of anterior cruciate ligament (ACL) of right knee",
+          "Peripheral medial meniscus tear of right knee"
         ],
         "icd10_codes": [
-          "S83.512A",
-          "S83.242A"
+          "S83.211A",
+          "S83.221A"
         ],
         "cpt_codes": [
           {
             "cpt": "29888",
             "description": "Arthroscopically aided ACL reconstruction"
-          },
-          {
-            "cpt": "29881",
-            "description": "Arthroscopy, knee, surgical; with meniscectomy"
           }
         ],
         "preauth_required": true,
-        "clinical_rationale": "MRI confirms ACL tear and medial meniscus tear; surgical CPTs are high-cost procedures.",
+        "medical_necessity_supported": true,
+        "clinical_rationale": "MRI findings confirm a full thickness tear of the anterior cruciate ligament (ACL) and a peripheral medial meniscus tear in the right knee. The impression states surgical management may be clinically indicated for these injuries. The proposed CPT code 29888 (Arthroscopically aided ACL reconstruction) is consistent with the diagnosed ACL tear.",
+        "clinical_reference_source": "Gemini medical coding review",
         "member_name": "Aarav Sen",
         "primary_plan": "plan_b",
         "primary_plan_label": "Insurer2 / Plan B",
         "secondary_plan": "plan_a",
         "secondary_plan_label": "Insurer1 / Plan A",
-        "billed_amount_inr": 535000,
-        "allowed_amount_inr": 535000,
+        "billed_amount_inr": 610000,
+        "allowed_amount_inr": 610000,
         "non_covered_amount_inr": 0,
         "primary_copay_inr": 0,
         "primary_deductible_applied_inr": 30000,
-        "primary_coinsurance_inr": 101000,
-        "primary_oop_applied_inr": 131000,
-        "primary_paid_inr": 404000,
-        "secondary_paid_inr": 131000,
+        "primary_coinsurance_inr": 116000,
+        "primary_oop_applied_inr": 146000,
+        "primary_paid_inr": 464000,
+        "secondary_paid_inr": 146000,
         "patient_paid_inr": 0,
-        "cob_explanation": "Insurer2/Plan B is primary and pays INR 404,000 after INR 30,000 deductible, INR 0 copay, and INR 101,000 coinsurance. Insurer1/Plan A is secondary and pays INR 131,000 toward the residual. Patient responsibility is INR 0 on INR 535,000 billed charges."
+        "cob_explanation": "Insurer2/Plan B is primary and pays INR 464,000 after INR 30,000 deductible, INR 0 copay, and INR 116,000 coinsurance. Insurer1/Plan A is secondary and pays INR 146,000 toward the residual. Patient responsibility is INR 0 on INR 610,000 billed charges."
       }
     ],
-    "household_out_of_pocket_inr": 0,
-    "total_charges_inr": 587500,
-    "total_insurer_paid_inr": 587500,
-    "patient_message": "Coordination of Benefits result:\nTotal charges: INR 587,500\nTotal insurer payments: INR 587,500\nEstimated household out-of-pocket: INR 0"
+    "household_out_of_pocket_inr": 11000,
+    "total_charges_inr": 630000,
+    "total_insurer_paid_inr": 619000,
+    "patient_message": "Coordination of Benefits result:\nTotal charges: INR 630,000\nTotal insurer payments: INR 619,000\nEstimated household out-of-pocket: INR 11,000"
   },
   "run_log": [
     {
-      "timestamp": "2026-06-29T13:41:46.024924+00:00",
+      "timestamp": "2026-07-08T12:45:00.754216+00:00",
       "event": "enter_step",
       "step": "intake"
     },
     {
-      "timestamp": "2026-06-29T13:41:46.027926+00:00",
+      "timestamp": "2026-07-08T12:45:00.756525+00:00",
       "event": "validate_step",
       "step": "intake",
       "attempt": 1,
       "ok": true,
-      "duration_ms": 2.25,
+      "duration_ms": 1.25,
       "issues": []
     },
     {
-      "timestamp": "2026-06-29T13:41:46.027926+00:00",
+      "timestamp": "2026-07-08T12:45:00.756525+00:00",
       "event": "enter_step",
       "step": "clinical"
     },
     {
-      "timestamp": "2026-06-29T13:41:46.028927+00:00",
+      "timestamp": "2026-07-08T12:45:17.892007+00:00",
       "event": "validate_step",
       "step": "clinical",
       "attempt": 1,
       "ok": true,
-      "duration_ms": 0.06,
+      "duration_ms": 17135.01,
       "issues": []
     },
     {
-      "timestamp": "2026-06-29T13:41:46.028927+00:00",
+      "timestamp": "2026-07-08T12:45:17.893001+00:00",
       "event": "enter_step",
       "step": "cob"
     },
     {
-      "timestamp": "2026-06-29T13:41:46.028927+00:00",
+      "timestamp": "2026-07-08T12:45:17.894001+00:00",
       "event": "validate_step",
       "step": "cob",
       "attempt": 1,
       "ok": true,
-      "duration_ms": 0.06,
+      "duration_ms": 0.11,
       "issues": []
     },
     {
-      "timestamp": "2026-06-29T13:41:46.029925+00:00",
+      "timestamp": "2026-07-08T12:45:17.894001+00:00",
       "event": "enter_step",
       "step": "output"
     }
   ],
   "reflection": [],
-  "run_id": "e1d939dc-21aa-45d2-9ded-ebbc05b23763",
+  "run_id": "55f10de7-a554-4672-b26b-3a96b1989411",
   "status": "complete",
-  "started_at": "2026-06-29T13:41:46.023924+00:00",
-  "completed_at": "2026-06-29T13:41:46.993102+00:00",
+  "started_at": "2026-07-08T12:45:00.754216+00:00",
+  "completed_at": "2026-07-08T12:45:18.004948+00:00",
   "tool_contracts": {
     "intake_agent": {
       "input": {
