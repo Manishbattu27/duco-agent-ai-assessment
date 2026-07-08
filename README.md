@@ -1,6 +1,6 @@
 # DuCO-Agent AI Assessment
 
-DuCO-Agent is an agentic Coordination of Benefits system for Priya and Aarav Sen's dual-coverage health insurance scenario. It ingests mock multi-modal medical inputs, infers clinical codes, applies COB rules, calculates out-of-pocket cost, and generates patient-facing and insurer-facing outputs.
+DuCO-Agent is a demo project for Priya and Aarav Sen's dual health insurance scenario. It reads mock medical documents, identifies the important claim details, applies Coordination of Benefits rules, and generates useful outputs such as claim summaries, pre-authorization letters, and a cost-flow chart.
 
 ## Architecture
 
@@ -8,10 +8,10 @@ DuCO-Agent is an agentic Coordination of Benefits system for Priya and Aarav Sen
 Intake Agent -> Clinical Agent -> COB Agent -> Output Agent
 ```
 
-- Intake Agent parses invoices, MRI reports, estimates, and user transcript files.
-- Clinical Agent adds diagnoses, ICD-10, CPT codes, and preauthorization decisions.
-- COB Agent applies primary/secondary payer rules and payment math.
-- Output Agent writes summaries, JSON reports, preauthorization letters, charts, and audio briefing text.
+- Intake Agent reads the invoice, MRI report, surgeon estimate, and user query.
+- Clinical Agent adds diagnosis, ICD-10, CPT codes, and pre-authorization decisions.
+- COB Agent decides primary/secondary payer order and calculates payments.
+- Output Agent writes the summary, final JSON, letters, chart, and briefing text.
 
 Detailed docs:
 
@@ -44,12 +44,12 @@ Open:
 http://127.0.0.1:8000
 ```
 
-The dashboard has two input paths:
+The dashboard supports two ways to run the analysis:
 
 - Document uploads for `priya_pt_invoice.png`, `aarav_mri_report.pdf`, and `surgeon_estimate.jpg`.
-- Manual amount fields for quick recalculation when documents are not readable or when testing different insurance cost scenarios.
+- Manual amount fields for quick recalculation when documents are not readable or when testing different cost scenarios.
 
-Uploaded documents replace the matching files under `data/`, refresh the extracted `.txt` sidecars, rerun the agents, and update the dashboard. PDF text extraction uses PyMuPDF. Image OCR uses Pillow + pytesseract and requires the Tesseract OCR engine to be installed on the machine.
+Uploaded documents replace the matching files under `data/`, refresh the extracted `.txt` files, rerun the agents, and update the dashboard. PDF parsing uses PyMuPDF. Image OCR uses Pillow, pytesseract, and the Tesseract OCR engine.
 
 Optional local UI token:
 
@@ -71,7 +71,7 @@ The UI writes to:
 - `data/priya_pt_invoice.txt`
 - `data/surgeon_estimate.txt`
 
-Then it reruns the full state machine and refreshes the dashboard. Do not run `scripts/create_mock_data.py` after manual edits unless you want to reset default data.
+Then it reruns the full workflow and refreshes the dashboard. Do not run `scripts/create_mock_data.py` after manual edits unless you want to reset the default data.
 
 ## Outputs
 
@@ -100,7 +100,7 @@ The rules engine models:
 - Copay by claim type.
 - Coinsurance.
 - Out-of-pocket remaining cap.
-- Lesser-of secondary coordination: the secondary payer pays no more than the remaining liability and no more than its own policy would allow.
+- Lesser-of secondary coordination: the secondary payer does not pay more than the remaining liability or more than its own policy would allow.
 
 ## Security Notes
 
@@ -111,7 +111,7 @@ The rules engine models:
 
 ## Optional Gemini Key
 
-For local Gemini-assisted clinical interpretation, copy `.env.example` to `.env` and replace the placeholder value:
+For Gemini-assisted clinical interpretation, copy `.env.example` to `.env` and replace the placeholder value:
 
 ```text
 GEMINI_API_KEY=your-real-api-key
