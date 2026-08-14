@@ -45,6 +45,7 @@ TOOL_CONTRACTS: dict[str, dict[str, Any]] = {
             "outputs.final_report": "machine readable JSON report path",
             "outputs.letters": "preauthorization and claim letter paths",
             "outputs.charts": "cost-flow visual paths",
+            "outputs.audio_file": "optional generated WAV audio briefing path",
         },
         "required_output_fields": ["summary", "final_report", "audio_briefing", "letters", "charts"],
     },

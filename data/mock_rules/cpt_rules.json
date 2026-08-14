@@ -1,0 +1,26 @@
+{
+  "physical_therapy": [
+    {
+      "cpt": "97161",
+      "description": "Physical therapy evaluation, low complexity",
+      "source": "Mock CPT rules API"
+    },
+    {
+      "cpt": "97110",
+      "description": "Therapeutic exercises",
+      "source": "Mock CPT rules API"
+    }
+  ],
+  "surgery": [
+    {
+      "cpt": "29888",
+      "description": "Arthroscopically aided ACL reconstruction",
+      "source": "Mock CPT rules API"
+    },
+    {
+      "cpt": "29881",
+      "description": "Knee arthroscopy with meniscectomy",
+      "source": "Mock CPT rules API"
+    }
+  ]
+}

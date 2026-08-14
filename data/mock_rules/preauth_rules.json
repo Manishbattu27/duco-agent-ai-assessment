@@ -1,0 +1,22 @@
+{
+  "29888": {
+    "preauth_required": true,
+    "reason": "ACL reconstruction is a planned surgical procedure requiring utilization review.",
+    "source": "Mock preauthorization rules API"
+  },
+  "29881": {
+    "preauth_required": true,
+    "reason": "Knee arthroscopy with meniscectomy is a planned surgical procedure requiring utilization review.",
+    "source": "Mock preauthorization rules API"
+  },
+  "97161": {
+    "preauth_required": false,
+    "reason": "Mock plan rules do not require preauthorization for standard PT evaluation.",
+    "source": "Mock preauthorization rules API"
+  },
+  "97110": {
+    "preauth_required": false,
+    "reason": "Mock plan rules do not require preauthorization for standard therapeutic exercise.",
+    "source": "Mock preauthorization rules API"
+  }
+}

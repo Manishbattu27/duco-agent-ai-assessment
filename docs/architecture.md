@@ -6,10 +6,15 @@ flowchart LR
     B --> C["Clinical Agent"]
     C --> D["COB Agent"]
     D --> E["Output Agent"]
-    E --> F["Summary, JSON, letters, charts, audio briefing text"]
+    E --> F["Summary, JSON, letters, charts, audio text, optional WAV"]
     D --> G["Insurance rules engine"]
-    B --> H["OCR/PDF readers with text sidecar fallbacks"]
+    B --> H["OCR/PDF readers, Gemini Vision fallback, sidecar cache"]
     C --> I["Optional Gemini inference with deterministic fallback"]
+    C --> K["JSON-backed CPT and preauth mock APIs"]
+    J["Router decision log"] --> B
+    J --> C
+    J --> D
+    J --> E
 ```
 
 ## Agent Boundaries
@@ -22,3 +27,11 @@ flowchart LR
 ## Why Multi-Agent
 
 The problem combines document extraction, clinical reasoning, financial adjudication, and deliverable generation. Separate agents keep these concerns testable and explainable while the state machine still runs end to end.
+
+## Router Decisions
+
+Before each agent runs, the controller records a router decision with the selected action, prerequisite state, and reason. This keeps the workflow auditable: the run log shows not only that an agent ran, but why it was eligible to run. If required upstream state is missing, the router records a skip decision instead of blindly calling the next agent.
+
+If an agent fails validation after bounded retries, the controller stops the workflow and records skip decisions for downstream agents. For example, failed intake prevents clinical, COB, and output execution; failed clinical validation prevents COB and output execution.
+
+When Gemini is configured, the controller can add an LLM judge validation event to the trace. Deterministic validation and structured contracts still remain the primary guardrails.

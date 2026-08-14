@@ -4,6 +4,7 @@ import re
 from typing import Any
 
 from utils.llm import optional_json_completion
+from utils.mock_apis import lookup_cpt_rules, preauth_required_for_codes
 from utils.validation import ValidationResult
 
 
@@ -107,18 +108,24 @@ Insurance claim:
 
     def _deterministic_inference(self, claim: dict[str, Any]) -> dict[str, Any]:
         if claim["claim_type"] == "physical_therapy":
+            cpt_codes = lookup_cpt_rules("physical_therapy") or self.CPT_KNOWLEDGE["physical_therapy"]
             return {
                 "diagnosis": ["Chronic low back pain"],
                 "icd10_codes": ["M54.50"],
-                "cpt_codes": self.CPT_KNOWLEDGE["physical_therapy"],
-                "preauth_required": False,
+                "cpt_codes": cpt_codes,
+                "preauth_required": preauth_required_for_codes(cpt_codes),
                 "medical_necessity_supported": True,
-                "clinical_rationale": "PT invoice describes evaluation and therapeutic exercise for chronic back pain.",
-                "clinical_reference_source": "Deterministic fallback rule set",
+                "clinical_rationale": (
+                    "PT invoice describes evaluation and therapeutic exercise for chronic back pain. "
+                    "CPT and preauthorization rules were checked through the mock rules API."
+                ),
+                "clinical_reference_source": "Mock CPT/preauth rules API with deterministic fallback",
             }
 
         procedures = claim.get("procedures", self.CPT_KNOWLEDGE["surgery"])
         codes = [{"cpt": item["cpt"], "description": item["description"]} for item in procedures]
+        if not codes:
+            codes = lookup_cpt_rules("surgery") or self.CPT_KNOWLEDGE["surgery"]
         acl_confirmed = self._has_affirmed_acl_tear(claim.get("clinical_text", ""))
         meniscus_confirmed = self._has_affirmed_meniscus_tear(claim.get("clinical_text", ""))
         diagnosis = []
@@ -137,10 +144,10 @@ Insurance claim:
             "diagnosis": diagnosis,
             "icd10_codes": icd10_codes,
             "cpt_codes": codes,
-            "preauth_required": any(item["cpt"] in self.PREAUTH_REQUIRED for item in codes),
+            "preauth_required": preauth_required_for_codes(codes),
             "medical_necessity_supported": acl_confirmed or meniscus_confirmed,
             "clinical_rationale": self._surgery_rationale(acl_confirmed, meniscus_confirmed),
-            "clinical_reference_source": "Deterministic fallback rule set",
+            "clinical_reference_source": "Mock CPT/preauth rules API with deterministic fallback",
         }
 
     def _has_affirmed_acl_tear(self, text: str) -> bool:
@@ -179,7 +186,7 @@ Insurance claim:
         )
 
     def check_preauthorization(self, cpt_codes: list[dict[str, str]]) -> bool:
-        return any(code["cpt"] in self.PREAUTH_REQUIRED for code in cpt_codes)
+        return preauth_required_for_codes(cpt_codes)
 
     def generate_medical_summary(self, claims: list[dict[str, Any]]) -> str:
         lines = []
