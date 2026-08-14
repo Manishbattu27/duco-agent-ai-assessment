@@ -1,13 +1,6 @@
-METRO BACK CARE PHYSIOTHERAPY
-
-Patient Priya Sen
-
-Document Physical Therapy Invoice
-
+Sen Rehabilitation Clinic
+Patient: Priya Sen
 Service: Physical Therapy Evaluation and Therapeutic Exercise
-
-Dates of service: 01-Aug-2026, 04-Aug-2026, 08-Aug-2028,
-
-Billing note: lumbar mobility rogram, unpaid invoice for COB review.
-
-Total charges INR20,000
+Dates of service: 03-Jun-2026, 06-Jun-2026, 10-Jun-2026, 13-Jun-2026
+Billing note: chronic back pain program, submit to primary then COB secondary.
+Total charges: INR 30,000

@@ -1,20 +1,20 @@
 DuCO-Agent Claim Summary
 ============================
 Coordination of Benefits result:
-Total charges: INR 630,000
-Total insurer payments: INR 619,000
-Estimated household out-of-pocket: INR 11,000
+Total charges: INR 480,000
+Total insurer payments: INR 468,000
+Estimated household out-of-pocket: INR 12,000
 
 PRIYA-PT-001 - Priya Sen
 Service: Physical Therapy Evaluation and Therapeutic Exercise
-Primary: Insurer1 / Plan A paid INR 9,000
+Primary: Insurer1 / Plan A paid INR 18,000
 Secondary: Insurer2 / Plan B paid INR 0
-Patient estimate: INR 11,000
+Patient estimate: INR 12,000
 Preauthorization required: No
 
 AARAV-ACL-001 - Aarav Sen
 Service: ACL reconstruction with meniscectomy
-Primary: Insurer2 / Plan B paid INR 464,000
-Secondary: Insurer1 / Plan A paid INR 146,000
+Primary: Insurer2 / Plan B paid INR 336,000
+Secondary: Insurer1 / Plan A paid INR 114,000
 Patient estimate: INR 0
 Preauthorization required: Yes

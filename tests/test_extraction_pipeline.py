@@ -33,6 +33,20 @@ def test_image_refresh_uses_ocr_not_existing_sidecar(monkeypatch):
     assert sidecar_path.read_text(encoding="utf-8") == "Total charges: INR 47,500"
 
 
+def test_image_refresh_can_use_vision_fallback(monkeypatch):
+    runtime_dir = _runtime_dir("vision_refresh")
+    image_path = runtime_dir / "invoice.png"
+    Image.new("RGB", (120, 80), "white").save(image_path)
+
+    monkeypatch.setitem(sys.modules, "pytesseract", types.SimpleNamespace(image_to_string=lambda _image: ""))
+    monkeypatch.setattr("utils.ocr.optional_vision_text_extraction", lambda _path, document_type: "Total charges: INR 52,000")
+
+    text = refresh_image_sidecar(image_path)
+
+    assert text == "Total charges: INR 52,000"
+    assert "52,000" in image_path.with_suffix(".txt").read_text(encoding="utf-8")
+
+
 def test_pdf_refresh_extracts_text_without_existing_sidecar():
     runtime_dir = _runtime_dir("pdf_refresh")
     pdf_path = runtime_dir / "mri.pdf"

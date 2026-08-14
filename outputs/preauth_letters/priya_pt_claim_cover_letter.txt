@@ -3,7 +3,7 @@ Subject: Coordination of Benefits Claim Submission for Priya Sen Physical Therap
 
 Dear Claims Team,
 
-Please process Priya Sen's unpaid physical therapy claim for INR 20,000. The services map to CPT 97161, 97110 and diagnosis Chronic low back pain. Plan A is primary for Priya, and Plan B is secondary.
+Please process Priya Sen's unpaid physical therapy claim for INR 30,000. The services map to CPT 97161, 97110 and diagnosis Chronic low back pain. Plan A is primary for Priya, and Plan B is secondary.
 
 No pre-authorization is indicated under the mock PT rules. Please coordinate benefits so any eligible residual member liability is considered by the secondary plan.
 

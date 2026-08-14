@@ -6,6 +6,7 @@ from typing import Any
 
 from utils.insurance_rules import format_inr
 from utils.simple_chart import write_cost_flow_chart
+from utils.tts import write_tts_audio
 from utils.validation import ValidationResult
 
 
@@ -26,23 +27,28 @@ class OutputAgent:
             "clinical": clinical,
             "cob": cob,
             "run_log": state["run_log"],
+            "router_decisions": state.get("router_decisions", []),
             "reflection": state["reflection"],
         }
 
         summary_path = self.output_dir / "summary.txt"
         json_path = self.output_dir / "final_report.json"
         audio_path = self.output_dir / "audio_briefing.txt"
+        audio_file_path = self.output_dir / "audio_briefing.wav"
         chart_paths = write_cost_flow_chart(cob["claims"], self.charts_dir)
         letter_paths = self._write_letters(cob["claims"])
+        audio_briefing = self._audio_briefing(cob)
 
         summary_path.write_text(self._summary(cob), encoding="utf-8")
         json_path.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
-        audio_path.write_text(self._audio_briefing(cob), encoding="utf-8")
+        audio_path.write_text(audio_briefing, encoding="utf-8")
+        generated_audio = write_tts_audio(audio_briefing, audio_file_path)
 
         outputs = {
             "summary": str(summary_path),
             "final_report": str(json_path),
             "audio_briefing": str(audio_path),
+            "audio_file": str(generated_audio) if generated_audio else None,
             "letters": letter_paths,
             "charts": chart_paths,
         }
@@ -144,6 +150,8 @@ DuCO-Agent Clinical Coordination System
     def _validate(self, outputs: dict[str, Any]) -> ValidationResult:
         issues = []
         for key, value in outputs.items():
+            if value is None:
+                continue
             paths = value if isinstance(value, list) else [value]
             for path in paths:
                 if not Path(path).exists():

@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from utils.llm import optional_vision_text_extraction
+
 
 COMMON_TESSERACT_PATHS = (
     Path(r"C:\Program Files\Tesseract-OCR\tesseract.exe"),
@@ -14,6 +16,7 @@ def extract_text_from_image(path: Path, prefer_sidecar: bool = True) -> str:
     if prefer_sidecar and sidecar.exists():
         return sidecar.read_text(encoding="utf-8")
 
+    ocr_error: Exception | None = None
     try:
         from PIL import Image
         import pytesseract
@@ -24,12 +27,20 @@ def extract_text_from_image(path: Path, prefer_sidecar: bool = True) -> str:
             raise RuntimeError("OCR completed but returned no text.")
         return text
     except Exception as exc:
-        if sidecar.exists():
-            return sidecar.read_text(encoding="utf-8")
+        ocr_error = exc
+
+    vision_text = optional_vision_text_extraction(path, document_type=path.stem.replace("_", " "))
+    if vision_text:
+        return vision_text
+
+    if sidecar.exists():
+        return sidecar.read_text(encoding="utf-8")
+    if ocr_error:
         raise RuntimeError(
             f"OCR failed for {path.name}. Install Pillow, pytesseract, and the Tesseract OCR engine, "
-            "or provide a readable image."
-        ) from exc
+            "configure Gemini Vision OCR, or provide a readable image."
+        ) from ocr_error
+    raise RuntimeError(f"OCR failed for {path.name}.")
 
 
 def refresh_image_sidecar(path: Path) -> str:

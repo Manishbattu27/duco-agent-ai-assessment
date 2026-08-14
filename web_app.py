@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import re
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -163,6 +164,8 @@ class DuCORequestHandler(BaseHTTPRequestHandler):
             content_type = "image/svg+xml"
         elif path.suffix == ".png":
             content_type = "image/png"
+        elif path.suffix == ".wav":
+            content_type = "audio/wav"
         elif path.suffix == ".json":
             content_type = "application/json; charset=utf-8"
         data = path.read_bytes()
@@ -319,6 +322,11 @@ def _index_html(path: str = "/", error: str | None = None) -> str:
     status_class = "error" if error else ""
     claims_html = "".join(_claim_card(claim) for claim in cob["claims"])
     upload_action = f"/upload?token={_escape(token)}" if token else "/upload"
+    audio_link = (
+        '<a href="/outputs/audio_briefing.wav" download="audio_briefing.wav">Download Audio Briefing</a>'
+        if (OUTPUT_DIR / "audio_briefing.wav").exists()
+        else ""
+    )
     return HTML_TEMPLATE.replace("__PT_AMOUNT__", str(amounts["pt_amount"])).replace(
         "__ACL_AMOUNT__", str(amounts["acl_amount"])
     ).replace("__MENISCUS_AMOUNT__", str(amounts["meniscus_amount"])).replace(
@@ -331,7 +339,11 @@ def _index_html(path: str = "/", error: str | None = None) -> str:
         "__INSURER_PAID__", _format_inr(cob["total_insurer_paid_inr"])
     ).replace("__PATIENT_PAYS__", _format_inr(cob["household_out_of_pocket_inr"])).replace(
         "__CLAIMS__", claims_html
-    ).replace("__SUMMARY__", _escape(str(state["summary"])))
+    ).replace("__SUMMARY__", _escape(str(state["summary"]))).replace(
+        "__AGENT_TRACES__", _agent_trace_html(report)
+    ).replace(
+        "__AUDIO_LINK__", audio_link
+    )
 
 
 def _auth_html() -> str:
@@ -375,6 +387,34 @@ def _claim_card(claim: dict[str, object]) -> str:
 <div class="row"><span>Secondary paid</span><strong>{_format_inr(int(claim["secondary_paid_inr"]))}</strong></div>
 <div class="row"><span>Patient</span><strong>{_format_inr(int(claim["patient_paid_inr"]))}</strong></div>
 </article>"""
+
+
+def _agent_trace_html(report: dict[str, object]) -> str:
+    decisions = report.get("router_decisions", []) if isinstance(report, dict) else []
+    run_log = report.get("run_log", []) if isinstance(report, dict) else []
+    rows = []
+    for decision in decisions:
+        if not isinstance(decision, dict):
+            continue
+        rows.append(
+            "<div class=\"trace-row\">"
+            f"<strong>{_escape(str(decision.get('step', '')))}</strong>"
+            f"<span>{_escape(str(decision.get('action', '')))}</span>"
+            f"<em>{_escape(str(decision.get('reason', '')))}</em>"
+            "</div>"
+        )
+    for event in run_log[-10:]:
+        if not isinstance(event, dict):
+            continue
+        label = f"{event.get('event', '')} / {event.get('step', '')}"
+        detail = event.get("router_reason") or event.get("reason") or event.get("issues") or ""
+        rows.append(
+            "<div class=\"trace-row compact\">"
+            f"<strong>{_escape(str(label))}</strong>"
+            f"<em>{_escape(str(detail))}</em>"
+            "</div>"
+        )
+    return "".join(rows) or "<div class=\"trace-row\"><em>No trace events yet.</em></div>"
 
 
 def _format_inr(amount: int) -> str:
@@ -449,11 +489,19 @@ button.secondary { width: 100%; margin-top: 4px; }
 .row strong { text-align: right; }
 .tag { display: inline-block; padding: 4px 8px; border-radius: 999px; background: #eef6ff; color: #1d4ed8; font-size: 12px; font-weight: 800; margin-bottom: 10px; }
 .chart { width: 100%; min-height: 190px; border: 1px solid var(--line); border-radius: 8px; background: #f8fafc; margin-top: 16px; }
-.letters { display: grid; grid-template-columns: repeat(3, minmax(180px, 1fr)); gap: 10px; margin-top: 16px; }
+.letters { display: grid; grid-template-columns: repeat(4, minmax(160px, 1fr)); gap: 10px; margin-top: 16px; }
 .letters a { color: var(--brand); border: 1px solid var(--line); border-radius: 7px; padding: 10px; text-decoration: none; font-weight: 750; background: #fff; transition: border-color .15s ease, background .15s ease; }
 .letters a:hover { border-color: #93c5fd; background: #f8fbff; }
+.tts-button { background: #047857; }
+.tts-button:hover { background: #036047; }
 pre { margin: 0; white-space: pre-wrap; font-family: Consolas, monospace; font-size: 13px; line-height: 1.45; color: #253044; }
 .summary { max-height: 270px; overflow: auto; border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: var(--soft); margin-top: 16px; }
+.trace-panel { margin-top: 16px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #fff; }
+.trace-heading { padding: 10px 12px; font-size: 13px; font-weight: 850; background: var(--soft); border-bottom: 1px solid var(--line); }
+.trace-row { display: grid; grid-template-columns: 105px 60px 1fr; gap: 10px; align-items: start; padding: 9px 12px; border-bottom: 1px solid #edf1f6; font-size: 12px; }
+.trace-row.compact { grid-template-columns: 165px 1fr; color: var(--muted); }
+.trace-row span { color: var(--green); font-weight: 850; text-transform: uppercase; }
+.trace-row em { color: var(--muted); font-style: normal; }
 @media (max-width: 900px) {
   .header-inner { align-items: flex-start; flex-direction: column; }
   main, .metrics, .claims, .letters { grid-template-columns: 1fr; }
@@ -502,8 +550,11 @@ __HIDDEN_TOKEN__
 <a href="/outputs/preauth_letters/aarav_plan_b_primary_preauth.txt" download="aarav_plan_b_primary_preauth.txt">Download Aarav Plan B Letter</a>
 <a href="/outputs/preauth_letters/aarav_plan_a_secondary_preauth.txt" download="aarav_plan_a_secondary_preauth.txt">Download Aarav Plan A Letter</a>
 <a href="/outputs/preauth_letters/priya_pt_claim_cover_letter.txt" download="priya_pt_claim_cover_letter.txt">Download Priya PT Letter</a>
+__AUDIO_LINK__
+<button class="tts-button" type="button" id="playBriefing">Play Audio Briefing</button>
 </div>
-<div class="summary"><pre>__SUMMARY__</pre></div>
+<div class="summary"><pre id="briefingText">__SUMMARY__</pre></div>
+<div class="trace-panel"><div class="trace-heading">Agent Traces</div>__AGENT_TRACES__</div>
 </div></section>
 </main>
 <script>
@@ -523,14 +574,26 @@ document.querySelectorAll('form').forEach(form => {
     }
   });
 });
+const playBriefing = document.getElementById('playBriefing');
+if (playBriefing) {
+  playBriefing.addEventListener('click', () => {
+    const text = document.getElementById('briefingText')?.innerText || '';
+    if (!('speechSynthesis' in window) || !text.trim()) return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.rate = 0.95;
+    window.speechSynthesis.speak(utterance);
+  });
+}
 </script>
 </body>
 </html>"""
 
 def main() -> None:
     mode = "token protected" if ui_token_required() else "local demo"
-    server = ThreadingHTTPServer(("127.0.0.1", 8000), DuCORequestHandler)
-    print(f"DuCO-Agent UI running at http://127.0.0.1:8000 ({mode})")
+    port = int(os.getenv("PORT", "8000"))
+    server = ThreadingHTTPServer(("0.0.0.0", port), DuCORequestHandler)
+    print(f"DuCO-Agent UI running at http://127.0.0.1:{port} ({mode})")
     server.serve_forever()
 
 
