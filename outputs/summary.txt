@@ -1,5 +1,4 @@
 DuCO-Agent Claim Summary
-============================
 Coordination of Benefits result:
 Total charges: INR 480,000
 Total insurer payments: INR 468,000

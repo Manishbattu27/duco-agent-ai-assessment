@@ -9,6 +9,8 @@ def write_tts_audio(text: str, output_path: Path) -> Path | None:
     """Generate a local WAV briefing when the OS TTS engine is available."""
     if os.getenv("PYTEST_CURRENT_TEST"):
         return None
+    if os.name == "nt":
+        return _write_windows_sapi_audio(text, output_path)
     try:
         import pyttsx3
 

@@ -57,7 +57,6 @@ class OutputAgent:
     def _summary(self, cob: dict[str, Any]) -> str:
         lines = [
             "DuCO-Agent Claim Summary",
-            "=" * 28,
             cob["patient_message"],
             "",
         ]

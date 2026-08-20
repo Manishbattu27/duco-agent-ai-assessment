@@ -32,6 +32,32 @@ python scripts/create_mock_data.py
 python main.py
 ```
 
+## Google ADK Entry Point
+
+The project includes a Google ADK agent wrapper in:
+
+- `adk_duco_agent/agent.py`
+
+It defines `root_agent` and exposes these ADK tools:
+
+- `run_duco_analysis`
+- `get_duco_report`
+- `list_duco_agent_traces`
+
+Run it with ADK after installing requirements:
+
+```bash
+adk run adk_duco_agent
+```
+
+For the ADK web runner:
+
+```bash
+adk web .
+```
+
+The ADK agent calls the same deterministic state machine used by the dashboard, so COB math remains in code rather than in the LLM prompt.
+
 ## Dashboard
 
 ```bash

@@ -186,6 +186,7 @@ def _current_state() -> dict[str, object]:
             "user_query": (DATA_DIR / "user_query.txt").read_text(encoding="utf-8"),
         },
         "summary": _read_text_if_exists(OUTPUT_DIR / "summary.txt"),
+        "audio_briefing": _read_text_if_exists(OUTPUT_DIR / "audio_briefing.txt"),
         "report": _read_report(),
     }
 
@@ -312,6 +313,7 @@ def _index_html(path: str = "/", error: str | None = None) -> str:
     cob = report["cob"]
     token = parse_qs(urlparse(path).query).get("token", [""])[0]
     hidden_token = f'<input type="hidden" name="token" value="{_escape(token)}">' if token else ""
+    chart_src = _output_url("charts/cost_flow.svg", token)
     uploaded = parse_qs(urlparse(path).query).get("uploaded", [""])[0]
     if error:
         status = f"Error: {error}"
@@ -339,7 +341,11 @@ def _index_html(path: str = "/", error: str | None = None) -> str:
         "__INSURER_PAID__", _format_inr(cob["total_insurer_paid_inr"])
     ).replace("__PATIENT_PAYS__", _format_inr(cob["household_out_of_pocket_inr"])).replace(
         "__CLAIMS__", claims_html
-    ).replace("__SUMMARY__", _escape(str(state["summary"]))).replace(
+    ).replace("__CHART_SRC__", chart_src).replace(
+        "__SUMMARY__", _escape(str(state["summary"]))
+    ).replace(
+        "__AUDIO_BRIEFING_TEXT__", _escape(str(state["audio_briefing"]))
+    ).replace(
         "__AGENT_TRACES__", _agent_trace_html(report)
     ).replace(
         "__AUDIO_LINK__", audio_link
@@ -355,6 +361,17 @@ def _auth_html() -> str:
 def _token_query(path: str) -> str:
     token = parse_qs(urlparse(path).query).get("token", [""])[0]
     return f"?token={token}" if token else ""
+
+
+def _output_url(relative_output_path: str, token: str = "") -> str:
+    path = OUTPUT_DIR / relative_output_path
+    params = []
+    if token:
+        params.append(f"token={token}")
+    if path.exists():
+        params.append(f"v={int(path.stat().st_mtime)}")
+    suffix = "?" + "&".join(params) if params else ""
+    return f"/outputs/{relative_output_path}{suffix}"
 
 
 def _document_status_html() -> str:
@@ -545,7 +562,7 @@ __HIDDEN_TOKEN__
 <div class="metric"><span>Patient Pays</span><strong>__PATIENT_PAYS__</strong></div>
 </div>
 <div class="claims">__CLAIMS__</div>
-<img class="chart" src="/outputs/charts/cost_flow.svg" alt="COB cost flow chart">
+<img class="chart" src="__CHART_SRC__" alt="COB cost flow chart">
 <div class="letters">
 <a href="/outputs/preauth_letters/aarav_plan_b_primary_preauth.txt" download="aarav_plan_b_primary_preauth.txt">Download Aarav Plan B Letter</a>
 <a href="/outputs/preauth_letters/aarav_plan_a_secondary_preauth.txt" download="aarav_plan_a_secondary_preauth.txt">Download Aarav Plan A Letter</a>
@@ -553,6 +570,7 @@ __HIDDEN_TOKEN__
 __AUDIO_LINK__
 <button class="tts-button" type="button" id="playBriefing">Play Audio Briefing</button>
 </div>
+<span id="audioBriefingText" hidden>__AUDIO_BRIEFING_TEXT__</span>
 <div class="summary"><pre id="briefingText">__SUMMARY__</pre></div>
 <div class="trace-panel"><div class="trace-heading">Agent Traces</div>__AGENT_TRACES__</div>
 </div></section>
@@ -577,7 +595,7 @@ document.querySelectorAll('form').forEach(form => {
 const playBriefing = document.getElementById('playBriefing');
 if (playBriefing) {
   playBriefing.addEventListener('click', () => {
-    const text = document.getElementById('briefingText')?.innerText || '';
+    const text = document.getElementById('audioBriefingText')?.innerText || document.getElementById('briefingText')?.innerText || '';
     if (!('speechSynthesis' in window) || !text.trim()) return;
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);

@@ -15,6 +15,8 @@ flowchart LR
     J --> C
     J --> D
     J --> E
+    L["Google ADK root_agent"] --> M["ADK tools"]
+    M --> J
 ```
 
 ## Agent Boundaries
@@ -35,3 +37,16 @@ Before each agent runs, the controller records a router decision with the select
 If an agent fails validation after bounded retries, the controller stops the workflow and records skip decisions for downstream agents. For example, failed intake prevents clinical, COB, and output execution; failed clinical validation prevents COB and output execution.
 
 When Gemini is configured, the controller can add an LLM judge validation event to the trace. Deterministic validation and structured contracts still remain the primary guardrails.
+
+## Google ADK Wrapper
+
+The project includes a Google ADK entry point under `adk_duco_agent/agent.py`.
+It defines `root_agent` and exposes tool functions that call the same deterministic
+workflow:
+
+- `run_duco_analysis`
+- `get_duco_report`
+- `list_duco_agent_traces`
+
+This keeps the ADK-facing interaction agentic while preserving deterministic COB
+math and validation inside the existing Python agents.
